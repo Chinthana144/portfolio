@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#nav_bar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgba(19, 15, 97, 0.82);
+    color: #eee;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: #eee;
+    padding: 20px;
+    transition: all 0.4s ease;
+}
+.nav_link:hover{
+    background-color: rgba(39, 39, 161, 1);
+}
+
+#sec_hero{
+    margin-top: 50px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+}
+.section{
+    width: 80%;
+    margin-left: 10%;
+}
+
+/* hero section */
+#div_hero{
+    display: flex;
+    flex-direction: row;
+}
+#hero_content{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn_link{
+    text-decoration: none;
+    color: #111;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#img_hero_profile{
+    width: 100%;
+    border-radius: 20%;
+}
+#hero_profile{
+    width: 20%;
+}
+
+/* --- about me section --- */
+#sec_about_me{
+    margin-top: 20px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* --- skills section --- */
+#sec_skills{
+    margin-top: 20px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 20px;
+}
+#div_primary_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#div_secondary_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* --- footer --- */
+#footer{
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    z-index: 100;
+    font-size: 11px;
+}
