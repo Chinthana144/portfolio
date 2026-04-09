@@ -18,7 +18,7 @@
             <a href="#sec_about_me" class="nav_link">About</a>
             <a href="#sec_skills" class="nav_link">Skills</a>
             <a href="projects.html" class="nav_link">Projects</a>
-            <a href="#" class="nav_link">Experience</a>
+            <a href="#sec_experiences" class="nav_link">Experience</a>
             <a href="#" class="nav_link">Contact</a>
         </div>
 
@@ -116,42 +116,42 @@
 
                 <h6>Screenshots</h6>
                 <div class="gallery">
-                <!-- Main Image -->
-                <div class="main-image">
-                    <img id="currentImage" class="currentImage" src="assets/images/cloudtik/dashboard.png" alt="Project Screenshot">
-                    <p id="imageCaption">Dashboard overview with real-time statistics</p>
-                </div>
-                <!-- Thumbnails -->
-                <div class="thumbnails">
-                    <img src="assets/images/cloudtik/dashboard.png" 
-                        data-caption="Dashboard overview with real-time statistics"
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" class="currentImage" src="assets/images/cloudtik/dashboard.png" alt="Project Screenshot">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/cloudtik/dashboard.png" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/customers.png" 
-                        data-caption="Customer management system"
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                        <img src="assets/images/cloudtik/customers.png" 
+                            data-caption="Customer management system"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/invoice.png" 
-                        data-caption="Invoice page to issue subscription."
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                        <img src="assets/images/cloudtik/invoice.png" 
+                            data-caption="Invoice page to issue subscription."
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/subscriptions.png" 
-                        data-caption="Subscriptions show status and user information"
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                        <img src="assets/images/cloudtik/subscriptions.png" 
+                            data-caption="Subscriptions show status and user information"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/user_access.png" 
-                        data-caption="Multi-camp management system"
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                        <img src="assets/images/cloudtik/user_access.png" 
+                            data-caption="Multi-camp management system"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/logged.png" 
-                        data-caption="Successfull login page with expiry date and time."
-                        onclick="changeImage(this)">
-                </div>
+                        <img src="assets/images/cloudtik/logged.png" 
+                            data-caption="Successfull login page with expiry date and time."
+                            onclick="changeImage(this)">
+                    </div>
                 </div>
 
                 <h6>Tech Stack</h6>
@@ -221,13 +221,57 @@
                     <li>Created responsive UI using Blade templates</li>
                 </ul>
             </div>
-            
+            <a href="projects.html">View All Projects</a>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="section">
-        Experience
+    <section class="section" id="sec_experiences">
+        <div id="div_experiences">
+            <h5>Experiences</h5>
+            <h6>Trizent Infratech – Network Solutions Company</h6>
+            <p>
+                Role: <b>Full Stack Developer</b> <br>
+                Duration: <b>from March 2025 to present</b>
+            </p>
+
+            <h6>Overview</h6>
+            <p>
+                Trizent Infratech provides network infrastructure, CCTV installation, and internet services for labor camps. The company relied on manual spreadsheet-based workflows for managing customer subscriptions and sales operations.
+            </p>
+
+            <h6>Responsibilities & Contributions</h6>
+            <ul>
+                <li>Designed and developed the CloudTik ISP Management System to replace manual spreadsheet-based operations</li>
+                <li>Built a full-stack web application using Laravel, Blade, and MySQL</li>
+                <li>Integrated MikroTik routers using RouterOS API for automated user and session management</li>
+                <li>Developed features for customer registration, subscription handling, and real-time access control</li>
+                <li>Created multi-camp management functionality to support scalable operations</li>
+                <li>Implemented role-based access control for multiple salespersons</li>
+            </ul>
+
+            <h6>Challenges in Existing System</h6>
+            <ul>
+                <li>Sales and customer data managed manually using spreadsheets</li>
+                <li>No visibility into customer login time or subscription expiry</li>
+                <li>Limited to a single 30-day package with no flexibility</li>
+                <li>No customer history tracking (only basic details recorded)</li>
+                <li>No support for camp transfers or subscription recovery</li>
+                <li>Voucher-based system caused permanent access loss if credentials were misplaced</li>
+                <li>Difficult for salespersons to operate efficiently using mobile devices</li>
+            </ul>
+
+            <h6>Impact & Improvements</h6>
+            <ul>
+                <li>Replaced manual workflows with a centralized ISP management system</li>
+                <li>Enabled real-time tracking of customer login and subscription expiry</li>
+                <li>Introduced flexible subscription packages beyond fixed plans</li>
+                <li>Improved sales efficiency with a mobile-friendly system</li>
+                <li>Enabled customer history tracking and better data management</li>
+                <li>Reduced operational errors and improved overall system reliability</li>
+                <li>Streamlined sales operations across multiple camps</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Contact Section -->

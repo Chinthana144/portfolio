@@ -33,11 +33,10 @@
 
     <section class="section" id="sec_projects">
         <h4>Projects</h4>
-        <ul>
-            <li>
-                <a href="#cloudtik" class="project_list_item">CloudTik - ISP Management System</a>
-            </li>
-        </ul>
+
+        <a href="#cloudtik" class="project_list_item">CloudTik - ISP Management System</a>
+        <a href="#cloudtik_sale" class="project_list_item">CloudTik Sales Mobile Application</a>
+
     </section>
 
     <section class="section" id="cloudtik">
@@ -52,42 +51,42 @@
 
                 <h6>Screenshots</h6>
                 <div class="gallery">
-                <!-- Main Image -->
-                <div class="main-image">
-                    <img id="currentImage" class="currentImage" src="assets/images/cloudtik/dashboard.png" alt="Project Screenshot">
-                    <p id="imageCaption">Dashboard overview with real-time statistics</p>
-                </div>
-                <!-- Thumbnails -->
-                <div class="thumbnails">
-                    <img src="assets/images/cloudtik/dashboard.png" 
-                        data-caption="Dashboard overview with real-time statistics"
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" class="currentImage" src="assets/images/cloudtik/dashboard.png" alt="Project Screenshot">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/cloudtik/dashboard.png" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/customers.png" 
-                        data-caption="Customer management system"
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                        <img src="assets/images/cloudtik/customers.png" 
+                            data-caption="Customer management system"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/invoice.png" 
-                        data-caption="Invoice page to issue subscription."
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                        <img src="assets/images/cloudtik/invoice.png" 
+                            data-caption="Invoice page to issue subscription."
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/subscriptions.png" 
-                        data-caption="Subscriptions show status and user information"
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                        <img src="assets/images/cloudtik/subscriptions.png" 
+                            data-caption="Subscriptions show status and user information"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/user_access.png" 
-                        data-caption="Multi-camp management system"
-                        onclick="changeImage(this)"
-                        class="img_thumbnail">
+                        <img src="assets/images/cloudtik/user_access.png" 
+                            data-caption="Multi-camp management system"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
 
-                    <img src="assets/images/cloudtik/logged.png" 
-                        data-caption="Successfull login page with expiry date and time."
-                        onclick="changeImage(this)">
-                </div>
+                        <img src="assets/images/cloudtik/logged.png" 
+                            data-caption="Successfull login page with expiry date and time."
+                            onclick="changeImage(this)">
+                    </div>
                 </div>
 
                 <h6>Tech Stack</h6>
@@ -163,7 +162,114 @@
 
     <section class="section" id="cloudtik_sale">
         <div class="project_card">
-            <h5>CloudTik Sales - Mobile Application</h5>
+            <h5>CloudTik Sales Mobile Application</h5>
+            <h6>Overview</h6>
+            <p>
+                CloudTik Sales Mobile Application is a Flutter-based mobile app designed for sales personnel to manage customer registrations, subscriptions, and sales activities directly from the field. The app integrates with the CloudTik web system via APIs to provide real-time data access and operations.
+            </p>
+
+            <h6>Screeshots</h6>
+            <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" src="assets/images/cloudtik_sale/dashboard.jpg" alt="Project Screenshot" style="width: 260px;">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/cloudtik_sale/dashboard.jpg" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/login.jpg" 
+                            data-caption="User login page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/camp_select.jpg" 
+                            data-caption="Camp portal page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/invoice.jpg" 
+                            data-caption="Invoice page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/subscription_page.jpg" 
+                            data-caption="Subscriptions page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/subscription_view.jpg" 
+                            data-caption="Subscription view"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/customer_history.jpg" 
+                            data-caption="Show customer history of subscriptions"
+                            onclick="changeImage(this)">
+                    </div>
+            </div>
+
+            <h6>Tech Stack</h6>
+            <ul>
+                <li>Flutter (Dart)
+                <li>REST API Integration</li>
+                <li>Provider (State Management)</li>
+                <li>SharedPreferences (Local Storage)</li>
+            </ul>
+
+            <h6>Key Features</h6>
+            <ul>
+                <li>
+                    Sales-Focused Workflow
+                    <ul>
+                        <li>Designed specifically for salespersons operating in camps</li>
+                        <li>Enables fast and efficient customer onboarding</li>
+                    </ul>
+                </li>
+                <li>
+                    Customer Management
+                    <ul>
+                        <li>Register new customers directly from the app</li>
+                        <li>View and manage customer details</li>
+                    </ul>
+                </li>
+                <li>
+                    Subscription Handling
+                    <ul>
+                        <li>View subscription details</li>
+                        <li>Reset and manage active subscriptions</li>
+                        <li>Handle customer device changes via MAC address updates</li>
+                    </ul>
+                </li>
+                <li>
+                    Sales Tracking
+                    <ul>
+                        <li>View sales history specific to the logged-in user</li>
+                        <li>Ensures accountability and individual performance tracking</li>
+                    </ul>
+                </li>
+                <li>
+                    Authentication & Persistence
+                    <ul>
+                        <li>Secure login via API</li>
+                        <li>Persistent login using SharedPreferences</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h6>My Role & Contributions</h6>
+            <ul>
+                <li>Developed the mobile application using Flutter</li>
+                <li>Integrated REST APIs with the CloudTik backend</li>
+                <li>Implemented state management using Provider</li>
+                <li>Designed user-friendly interfaces for sales workflows</li>
+                <li>Built local storage handling for session persistence</li>
+                <li>Optimized app flow for real-world usage in camp environments</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="onecode">
+        <div class="project_card">
+            
         </div>
     </section>
 
