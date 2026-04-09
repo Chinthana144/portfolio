@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinthana Portfolio</title>
+    <title>Chinthana's Projects</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/project_style.css">
 </head>
 <body>
-    <!-- navigation bar -->
+     <!-- navigation bar -->
     <div id="nav_bar">
-        <h4>Chinthana Edirisinghe</h4>
+        <h4 id="nav_title">Chinthana Edirisinghe</h4>
         <div>
-            <a href="#sec_hero" class="nav_link">Home</a>
-            <a href="#sec_about_me" class="nav_link">About</a>
-            <a href="#sec_skills" class="nav_link">Skills</a>
+            <a href="index.html" class="nav_link">Home</a>
+            <a href="index.html#sec_about_me" class="nav_link">About</a>
+            <a href="index.html#sec_skills" class="nav_link">Skills</a>
             <a href="projects.html" class="nav_link">Projects</a>
-            <a href="#sec_experiences" class="nav_link">Experience</a>
+            <a href="#" class="nav_link">Experience</a>
             <a href="#" class="nav_link">Contact</a>
         </div>
 
@@ -32,80 +31,16 @@
         </div>
     </div>
 
-    <section class="section" id="sec_hero">
-        <div id="div_hero">
-            <div id="hero_content">
-                <h5>Hi, I'm Chinthana Edirisinghe</h5>
-                <h1>Full Stack Software Engineer</h1>
-                <p>I build scalable Web & Mobile Applications using Laravel & Flutter</p>
-                <div>
-                    <a href="#" class="btn_link">View Projects</a>
-                    <a href="#" class="btn_link">Contact Me</a>
-                </div>
-                
-            </div>
-            <div id="hero_profile">
-                <img src="assets/images/profiles/profile_1.jpg" alt="profile" id="img_hero_profile">
-            </div>
-        </div>
-    </section>
-
-    <!-- About me Section -->
-    <section class="section" id="sec_about_me">
-        <div id="div_about_me">
-            <h5>About Me</h5>
-            <p>
-                I'm a Full Stack Software Engineer with 6+ years of hands-on experience 
-                building real-world systems and applications.
-            </p>
-
-            <p>
-                I specialize in developing scalable web applications using Laravel
-                and creating mobile apps with Flutter. I've worked on, 
-            </p>
-
-            <ul>
-                <li>ISP management Systems</li>
-                <li>Tour Management Systems</li>
-                <li>POS Systems</li>
-                <li>Inventory Management Systems</li>
-                <li>Online & Offline Mobile Applications</li>
-            </ul>
-
-            <p>
-                I enjoy solving practical problems and building systems that are
-                efficient, reliable, and user-focused.
-            </p>
-
-            <p>
-                Currently, I'm focused on growing as a software engineer and
-                looking for opportunities where I can contribute to real-world
-                projects and continue improving my skills.
-            </p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="sec_skills">
-        <div id="div_skills">
-            <h5>Skills</h5>
-            <ul>
-                <li>Backend: <b>PHP, Laravel</b></li>
-                <li>Frontend: <b>HTML, CSS, JavaScript, React(basics)</b></li>
-                <li>Mobile: <b>Dart, Flutter</b></li>
-                <li>Desktop: <b>C#, Windows Form Applcation</b></li>
-                <li>Database: <b>MySQL, SQLite</b></li>
-                <li>APIs & Integration: <b>REST API Development, API Integration, MikroTik API</b></li>
-                <li>Tools & Technologies: <b>Git, GitHub, Postman</b> </li>
-                <li>Graphic Design: <b>Photoshop, Illustrator </b></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
     <section class="section" id="sec_projects">
+        <h4>Projects</h4>
+
+        <a href="#cloudtik" class="project_list_item">CloudTik - ISP Management System</a>
+        <a href="#cloudtik_sale" class="project_list_item">CloudTik Sales Mobile Application</a>
+
+    </section>
+
+    <section class="section" id="cloudtik">
         <div id="div_projects">
-            <h3>Projects</h3>
             <div class="project_card">
                 <h5>CloudTik - ISP Management System</h5>
 
@@ -221,73 +156,123 @@
                     <li>Created responsive UI using Blade templates</li>
                 </ul>
             </div>
-            <a href="projects.html">View All Projects</a>
+            
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="section" id="sec_experiences">
-        <div id="div_experiences">
-            <h5>Experiences</h5>
-            <h6>Trizent Infratech – Network Solutions Company</h6>
-            <p>
-                Role: <b>Full Stack Developer</b> <br>
-                Duration: <b>from March 2025 to present</b>
-            </p>
-
+    <section class="section" id="cloudtik_sale">
+        <div class="project_card">
+            <h5>CloudTik Sales Mobile Application</h5>
             <h6>Overview</h6>
             <p>
-                Trizent Infratech provides network infrastructure, CCTV installation, and internet services for labor camps. The company relied on manual spreadsheet-based workflows for managing customer subscriptions and sales operations.
+                CloudTik Sales Mobile Application is a Flutter-based mobile app designed for sales personnel to manage customer registrations, subscriptions, and sales activities directly from the field. The app integrates with the CloudTik web system via APIs to provide real-time data access and operations.
             </p>
 
-            <h6>Responsibilities & Contributions</h6>
+            <h6>Screeshots</h6>
+            <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" src="assets/images/cloudtik_sale/dashboard.jpg" alt="Project Screenshot" style="width: 260px;">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/cloudtik_sale/dashboard.jpg" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/login.jpg" 
+                            data-caption="User login page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/camp_select.jpg" 
+                            data-caption="Camp portal page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/invoice.jpg" 
+                            data-caption="Invoice page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/subscription_page.jpg" 
+                            data-caption="Subscriptions page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/subscription_view.jpg" 
+                            data-caption="Subscription view"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/cloudtik_sale/customer_history.jpg" 
+                            data-caption="Show customer history of subscriptions"
+                            onclick="changeImage(this)">
+                    </div>
+            </div>
+
+            <h6>Tech Stack</h6>
             <ul>
-                <li>Designed and developed the CloudTik ISP Management System to replace manual spreadsheet-based operations</li>
-                <li>Built a full-stack web application using Laravel, Blade, and MySQL</li>
-                <li>Integrated MikroTik routers using RouterOS API for automated user and session management</li>
-                <li>Developed features for customer registration, subscription handling, and real-time access control</li>
-                <li>Created multi-camp management functionality to support scalable operations</li>
-                <li>Implemented role-based access control for multiple salespersons</li>
+                <li>Flutter (Dart)
+                <li>REST API Integration</li>
+                <li>Provider (State Management)</li>
+                <li>SharedPreferences (Local Storage)</li>
             </ul>
 
-            <h6>Challenges in Existing System</h6>
+            <h6>Key Features</h6>
             <ul>
-                <li>Sales and customer data managed manually using spreadsheets</li>
-                <li>No visibility into customer login time or subscription expiry</li>
-                <li>Limited to a single 30-day package with no flexibility</li>
-                <li>No customer history tracking (only basic details recorded)</li>
-                <li>No support for camp transfers or subscription recovery</li>
-                <li>Voucher-based system caused permanent access loss if credentials were misplaced</li>
-                <li>Difficult for salespersons to operate efficiently using mobile devices</li>
+                <li>
+                    Sales-Focused Workflow
+                    <ul>
+                        <li>Designed specifically for salespersons operating in camps</li>
+                        <li>Enables fast and efficient customer onboarding</li>
+                    </ul>
+                </li>
+                <li>
+                    Customer Management
+                    <ul>
+                        <li>Register new customers directly from the app</li>
+                        <li>View and manage customer details</li>
+                    </ul>
+                </li>
+                <li>
+                    Subscription Handling
+                    <ul>
+                        <li>View subscription details</li>
+                        <li>Reset and manage active subscriptions</li>
+                        <li>Handle customer device changes via MAC address updates</li>
+                    </ul>
+                </li>
+                <li>
+                    Sales Tracking
+                    <ul>
+                        <li>View sales history specific to the logged-in user</li>
+                        <li>Ensures accountability and individual performance tracking</li>
+                    </ul>
+                </li>
+                <li>
+                    Authentication & Persistence
+                    <ul>
+                        <li>Secure login via API</li>
+                        <li>Persistent login using SharedPreferences</li>
+                    </ul>
+                </li>
             </ul>
 
-            <h6>Impact & Improvements</h6>
+            <h6>My Role & Contributions</h6>
             <ul>
-                <li>Replaced manual workflows with a centralized ISP management system</li>
-                <li>Enabled real-time tracking of customer login and subscription expiry</li>
-                <li>Introduced flexible subscription packages beyond fixed plans</li>
-                <li>Improved sales efficiency with a mobile-friendly system</li>
-                <li>Enabled customer history tracking and better data management</li>
-                <li>Reduced operational errors and improved overall system reliability</li>
-                <li>Streamlined sales operations across multiple camps</li>
+                <li>Developed the mobile application using Flutter</li>
+                <li>Integrated REST APIs with the CloudTik backend</li>
+                <li>Implemented state management using Provider</li>
+                <li>Designed user-friendly interfaces for sales workflows</li>
+                <li>Built local storage handling for session persistence</li>
+                <li>Optimized app flow for real-world usage in camp environments</li>
             </ul>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section">
-        <h5>Contact Me</h5>
-        <p>Feel free to reach out for opportunities or collaborations.</p>
-        <a href="mailto:chinthana144@gmail.com">Email Me</a><br>
-        <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" target="_blank">Linkedin</a><br>
-        <a href="https://github.com/Chinthana144" target="_blank">GitHub</a>
+    <section class="section" id="onecode">
+        <div class="project_card">
+            
+        </div>
     </section>
 
-    <footer id="footer">
-        © 2026 Chinthana Edirisinghe
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
