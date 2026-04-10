@@ -188,31 +188,38 @@
                     <div class="thumbnails">
                         <img src="assets/images/cloudtik_sale/dashboard.jpg" 
                             data-caption="Dashboard overview with real-time statistics"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/login.jpg" 
                             data-caption="User login page"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/camp_select.jpg" 
                             data-caption="Camp portal page"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/invoice.jpg" 
                             data-caption="Invoice page"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/subscription_page.jpg" 
                             data-caption="Subscriptions page"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/subscription_view.jpg" 
                             data-caption="Subscription view"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/customer_history.jpg" 
                             data-caption="Show customer history of subscriptions"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
                     </div>
             </div>
 
@@ -400,7 +407,117 @@
         </div>
     </section>
 
+    <section class="section" id="expense_tracker">
+        <div class="project_card">
+            <h5>Expense Tracker Mobile Application</h5>
+            <h6>Overview</h6>
+            <p>
+                Developed a fully offline expense tracking mobile application to give users a simple, ad-free way to manage their personal finances.
+                <br>
+                Most existing expense tracker apps rely heavily on internet connectivity and include intrusive advertisements. To address this, I built a lightweight and privacy-friendly solution that works entirely offline while still providing powerful financial insights.
+            </p>
 
+            <h6>Screeshots</h6>
+            <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" src="assets/images/expense_tracker/dashboard.jpg" alt="Project Screenshot" style="width: 260px;">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/expense_tracker/dashboard.jpg" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/categories.jpg" 
+                            data-caption="Income & expense categories"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/transactions.jpg" 
+                            data-caption="Account wise transactions"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/income_transactions.jpg" 
+                            data-caption="Income transactions"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/expense_transactions.jpg" 
+                            data-caption="Expense Transactions"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/category_report.jpg" 
+                            data-caption="Categori wise pie chart report"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/account_report.jpg" 
+                            data-caption="Account wise bar chart report"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+                    </div>
+            </div>
+
+            <h6>Tech Stack</h6>
+            <ul>
+                <li>Framework: Flutter</li>
+                <li>Language: Dart</li>
+                <li>Database: SQLite (sqflite)</li>
+                <li>State Management: Provider</li>
+                <li>Charts & Visualization: Flutter chart libraries</li>
+            </ul>
+
+            <h6>Key Features</h6>
+            <ul>
+                <li>
+                    <b>Multi-Account Management</b> <br>
+                    Users can create multiple accounts, each supporting a different currency
+                </li>
+                <li>
+                    <b>Income & Expense Tracking</b> <br>
+                    Track financial activity per account with clear separation of income and expenses
+                </li>
+                <li>
+                    <b>Custom Categories</b> <br>
+                    Users can create and manage their own categories for better organization
+                </li>
+                <li>
+                    <b>Data Visualization</b>
+                    <ul>
+                        <li>Donut charts for income vs expense comparison</li>
+                        <li>Pie and bar charts for detailed financial reports</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Advanced Filtering</b> <br>
+                    View and filter transactions by date range and categories
+                </li>
+                <li>
+                    <b>Offline-First Functionality</b> <br>
+                    Fully functional without internet using local SQLite database
+                </li>
+                <li>
+                    <b>Ad-Free Experience</b> <br>
+                    Clean and distraction-free UI with no third-party ads
+                </li>
+            </ul>
+
+            <h6>My Role & Contribution</h6>
+            <ul>
+                <li>Designed and developed the entire application using Flutter from scratch</li>
+                <li>Implemented local database architecture using SQLite for offline data persistence</li>
+                <li>Built scalable data models for accounts, transactions, and categories</li>
+                <li>Developed dynamic UI components for charts and financial reporting</li>
+                <li>Focused on performance optimization and smooth user experience</li>
+                <li>Applied clean coding practices and structured architecture for maintainability</li>
+            </ul>
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
 </body>
