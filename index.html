@@ -12,17 +12,24 @@
 <body>
     <!-- navigation bar -->
     <div id="nav_bar">
-        <h4>Chinthana Edirisinghe</h4>
+        <div>
+            <h4 style="margin: 0; font-size: 18px;">Portfolio</h4>
+            <p style="margin: 0; font-size: 12px;">chinthana144@gmail.com</p>
+        </div>
+        
         <div>
             <a href="#sec_hero" class="nav_link">Home</a>
             <a href="#sec_about_me" class="nav_link">About</a>
             <a href="#sec_skills" class="nav_link">Skills</a>
             <a href="projects.html" class="nav_link">Projects</a>
-            <a href="#sec_experiences" class="nav_link">Experience</a>
-            <a href="#" class="nav_link">Contact</a>
+            <a href="experiences.html" class="nav_link">Experience</a>
+            <a href="#sec_contact" class="nav_link">Contact</a>
         </div>
 
         <div>
+            <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
+                <img src="assets/icons/email_icon.png" alt="linkedin icon">
+            </a>
             <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" class="nav_icon_link">
                 <img src="assets/icons/linkedin_logo.png" alt="linkedin icon">
             </a>
@@ -39,8 +46,8 @@
                 <h1>Full Stack Software Engineer</h1>
                 <p>I build scalable Web & Mobile Applications using Laravel & Flutter</p>
                 <div>
-                    <a href="#" class="btn_link">View Projects</a>
-                    <a href="#" class="btn_link">Contact Me</a>
+                    <a href="projects.html" class="btn_link">View Projects</a>
+                    <a href="#sec_contact" class="btn_link">Contact Me</a>
                 </div>
                 
             </div>
@@ -105,7 +112,13 @@
     <!-- Projects Section -->
     <section class="section" id="sec_projects">
         <div id="div_projects">
-            <h3>Projects</h3>
+            <div class="div_title">
+                <h3>Projects</h3>
+                <a href="projects.html">
+                    <button class="btn_primary">View All Projects</button>
+                </a>
+            </div>
+            
             <div class="project_card">
                 <h5>CloudTik - ISP Management System</h5>
 
@@ -221,15 +234,19 @@
                     <li>Created responsive UI using Blade templates</li>
                 </ul>
             </div>
-            <a href="projects.html">View All Projects</a>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section class="section" id="sec_experiences">
         <div id="div_experiences">
-            <h5>Experiences</h5>
-            <h6>Trizent Infratech – Network Solutions Company</h6>
+            <div class="div_title">
+                <h3>Experiences</h3>
+                <a href="experiences.html">
+                    <button class="btn_primary">View All Experience</button>
+                </a>
+            </div>
+            <h6>Trizent Infratech - Network Solutions Company</h6>
             <p>
                 Role: <b>Full Stack Developer</b> <br>
                 Duration: <b>from March 2025 to present</b>
@@ -275,12 +292,24 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section">
+    <section class="section" id="sec_contact">
         <h5>Contact Me</h5>
         <p>Feel free to reach out for opportunities or collaborations.</p>
-        <a href="mailto:chinthana144@gmail.com">Email Me</a><br>
-        <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" target="_blank">Linkedin</a><br>
-        <a href="https://github.com/Chinthana144" target="_blank">GitHub</a>
+        <!-- <a href="mailto:chinthana144@gmail.com" class="link_button">Email Me</a><br> -->
+        <!-- <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" target="_blank" class="link_button">Linkedin</a><br> -->
+        <!-- <a href="https://github.com/Chinthana144" target="_blank" class="link_button">GitHub</a> -->
+
+        <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
+            <img src="assets/icons/email_icon.png" alt="linkedin icon">
+        </a>
+
+        <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" class="nav_icon_link">
+            <img src="assets/icons/linkedin_logo.png" alt="linkedin icon">
+        </a>
+
+        <a href="https://github.com/Chinthana144" class="nav_icon_link">
+            <img src="assets/icons/github_logo.png" alt="github icon">
+        </a>
     </section>
 
     <footer id="footer">
