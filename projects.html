@@ -17,11 +17,14 @@
             <a href="index.html#sec_about_me" class="nav_link">About</a>
             <a href="index.html#sec_skills" class="nav_link">Skills</a>
             <a href="projects.html" class="nav_link">Projects</a>
-            <a href="#" class="nav_link">Experience</a>
-            <a href="#" class="nav_link">Contact</a>
+            <a href="experiences.html" class="nav_link">Experience</a>
+            <a href="index.html#sec_contact" class="nav_link">Contact</a>
         </div>
 
         <div>
+            <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
+                <img src="assets/icons/email_icon.png" alt="linkedin icon">
+            </a>
             <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" class="nav_icon_link">
                 <img src="assets/icons/linkedin_logo.png" alt="linkedin icon">
             </a>
@@ -269,7 +272,127 @@
 
     <section class="section" id="onecode">
         <div class="project_card">
+            <h5>OneCode – Advanced ISP Management System</h5>
+            <h6>Overview</h6>
+            <p>
+                OneCode is an advanced ISP management system that extends the capabilities of CloudTik by introducing a flexible access model with both subscriptions and voucher-based authentication. The system is designed to support both long-term users and short-term visitors within labor camp environments.
+            </p>
+
+            <h6>Screenshots</h6>
+            <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" src="assets/images/onecode/dashboard.png" alt="Project Screenshot">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/onecode/dashboard.png" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/onecode/invoice_page.png" 
+                            data-caption="Invoice page with both Subscription and Voucher"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/onecode/cust_login.png" 
+                            data-caption="Customer login with QR code"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/onecode/packages.png" 
+                            data-caption="Multiple packages"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/onecode/access_plans.png" 
+                            data-caption="Access Planes with both Subscription and Voucher"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/onecode/reports.png" 
+                            data-caption="Reports Page"
+                            onclick="changeImage(this)">
+                    </div>
+            </div>
+
+            <h6>Tech Stack</h6>
+            <ul>
+                <li>Laravel (Backend)</li>
+                <li>Blade (Frontend)</li>
+                <li>MySQL (Database)</li>
+                <li>MikroTik RouterOS API</li>
+                <li>JavaScript (QR Code Generation)</li>
+            </ul>
+
+            <h6>Key Features</h6>
+            <ul>
+                <li>
+                    Dual Access System (Subscriptions + Vouchers)
+                    <ul>
+                        <li>Supports registered users with subscriptions</li>
+                        <li>Enables temporary access via voucher codes for short-term users</li>
+                        <li>Provides flexibility based on customer needs</li>
+                    </ul>
+                </li>
+                <li>
+                    Voucher-Based Authentication
+                    <ul>
+                        <li>Generates secure 8-digit numeric voucher codes</li>
+                        <li>Voucher activation binds user’s MAC address via MikroTik</li>
+                        <li>Prevents unauthorized sharing of access</li>
+                        <li>Voucher validity period of up to 3 months</li>
+                    </ul>
+                </li>
+                <li>
+                    Polymorphic Access Plans
+                    <ul>
+                        <li>Implemented polymorphic relationships to handle both subscriptions and vouchers</li>
+                        <li>Unified system design for managing different access types</li>                
+                    </ul>
+                </li>            
+                <li>
+                    QR Code Integration
+                    <ul>
+                        <li>QR code generated on MikroTik hotspot login page</li>
+                        <li>Salesperson scans QR for faster customer handling</li>
+                        <li>Enables quick device reset and MAC address updates</li>
+                        <li>Improves speed and efficiency of the sales process</li>
+                    </ul>
+                </li>
+                <li>
+                    Enhanced User Experience
+                    <ul>
+                        <li>Faster onboarding for customers without registration</li>
+                        <li>Transparent and user-friendly workflow</li>
+                        <li>Improves customer trust and service accessibility</li>
+                    </ul>
+                </li>
+                <li>
+                    Core System Features
+                    <ul>
+                        <li>
+                            Includes all functionalities of CloudTik:
+                            <ul>
+                                <li>Subscription management</li>
+                                <li>Customer handling</li>
+                                <li>Multi-camp management</li>
+                                <li>Access control and automation</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h6>My Role & Contributions</h6>
+            <ul>
+                <li>Designed and developed the full system architecture</li>
+                <li>Implemented voucher-based authentication system</li>
+                <li>Designed polymorphic database relationships for flexible access handling</li>
+                <li>Integrated MikroTik RouterOS API for network-level control</li>
+                <li>Developed QR-based workflow to optimize sales and support processes</li>
+                <li>Enhanced system usability for both salespersons and end users</li>
+            </ul>
+
             
+
         </div>
     </section>
 
