@@ -12,11 +12,6 @@ h1, h2, h3, h4, h5, h6{
     font-size: large;
 }
 
-#nav_title{
-    margin: 0;
-    font-size: 22px;
-}
-
 .project_list_item{
     text-decoration: none;
     color: black;
@@ -35,4 +30,13 @@ h1, h2, h3, h4, h5, h6{
 
 #sec_projects{
     margin-top: 50px;
+}
+
+#div_project_links{
+    display: flex;
+    flex-direction: column;
+}
+#div_project_links a{
+    margin: 5px 0;
+    width: fit-content;
 }

@@ -11,20 +11,23 @@
 <body>
      <!-- navigation bar -->
     <div id="nav_bar">
-        <div>
+        <button id="btn_menu" onclick="toggleNavBar()">Menu</button>
+
+        <div id="nav_title">
             <h4 style="margin: 0; font-size: 18px;">Projects</h4>
             <p style="margin: 0; font-size: 12px;">chinthana144@gmail.com</p>
         </div>
-        <div>
+        <div id="nav_items">
             <a href="index.html" class="nav_link">Home</a>
             <a href="index.html#sec_about_me" class="nav_link">About</a>
             <a href="index.html#sec_skills" class="nav_link">Skills</a>
             <a href="projects.html" class="nav_link">Projects</a>
             <a href="experiences.html" class="nav_link">Experience</a>
+            <a href="index.html#sec_education" class="nav_link">Education</a>
             <a href="index.html#sec_contact" class="nav_link">Contact</a>
         </div>
 
-        <div>
+        <div id="nav_ref">
             <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
                 <img src="assets/icons/email_icon.png" alt="linkedin icon">
             </a>
@@ -38,20 +41,30 @@
     </div>
 
     <section class="section" id="sec_projects">
-        <h4>Projects</h4>
+        <h4>
+            Projects    
+        </h4>
 
-        <div style="margin-top: 10px;">
+        <div id="div_project_links" style="margin-top: 10px;">
             <a href="#cloudtik" class="project_list_item">CloudTik - ISP Management System</a>
             <a href="#cloudtik_sale" class="project_list_item">CloudTik Sales Mobile Application</a>
             <a href="#onecode" class="project_list_item">OneCode - Advanced ISP System</a>
+            <a href="#expense_tracker" class="project_list_item">Extense Tracker</a>
+            <a href="#offline_pos" class="project_list_item">Offline POS System</a>
         </div>
       
     </section>
 
+    <!-- CloudTik Project -->
     <section class="section" id="cloudtik">
         <div id="div_projects">
             <div class="project_card">
-                <h5>CloudTik - ISP Management System</h5>
+                <div class="div_title">
+                <h4>CloudTik - ISP Management System</h4>
+                <a href="https://github.com/Chinthana144/CloudTik" target="_blank">
+                    <button class="btn_primary">View GitHub</button>
+                </a>
+            </div>
 
                 <h6>Overview</h6>
                 <p>
@@ -169,9 +182,16 @@
         </div>
     </section>
 
+    <!-- CloudTik Sale Project -->
     <section class="section" id="cloudtik_sale">
         <div class="project_card">
-            <h5>CloudTik Sales Mobile Application</h5>
+            <div class="project_card">
+                <div class="div_title">
+                <h4>CloudTik Sales Mobile Application</h4>
+                <a href="https://github.com/Chinthana144/CloudTik-Sales" target="_blank">
+                    <button class="btn_primary">View GitHub</button>
+                </a>
+            </div>
             <h6>Overview</h6>
             <p>
                 CloudTik Sales Mobile Application is a Flutter-based mobile app designed for sales personnel to manage customer registrations, subscriptions, and sales activities directly from the field. The app integrates with the CloudTik web system via APIs to provide real-time data access and operations.
@@ -188,31 +208,38 @@
                     <div class="thumbnails">
                         <img src="assets/images/cloudtik_sale/dashboard.jpg" 
                             data-caption="Dashboard overview with real-time statistics"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/login.jpg" 
                             data-caption="User login page"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/camp_select.jpg" 
                             data-caption="Camp portal page"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/invoice.jpg" 
                             data-caption="Invoice page"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/subscription_page.jpg" 
                             data-caption="Subscriptions page"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/subscription_view.jpg" 
                             data-caption="Subscription view"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
 
                         <img src="assets/images/cloudtik_sale/customer_history.jpg" 
                             data-caption="Show customer history of subscriptions"
-                            onclick="changeImage(this)">
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
                     </div>
             </div>
 
@@ -279,7 +306,13 @@
     <!-- OneCode project -->
     <section class="section" id="onecode">
         <div class="project_card">
-            <h5>OneCode – Advanced ISP Management System</h5>
+            <div class="project_card">
+                <div class="div_title">
+                <h4>OneCode - Advanced ISP Management System</h4>
+                <a href="https://github.com/Chinthana144/OneCode" target="_blank">
+                    <button class="btn_primary">View GitHub</button>
+                </a>
+            </div>
             <h6>Overview</h6>
             <p>
                 OneCode is an advanced ISP management system that extends the capabilities of CloudTik by introducing a flexible access model with both subscriptions and voucher-based authentication. The system is designed to support both long-term users and short-term visitors within labor camp environments.
@@ -400,7 +433,234 @@
         </div>
     </section>
 
+    <!-- Expense Tracker Project -->
+    <section class="section" id="expense_tracker">
+        <div class="project_card">
+            <div class="div_title">
+                <h4>Expense Tracker Mobile Application</h4>
+                <a href="https://github.com/Chinthana144/MyAccounts" target="_blank">
+                    <button class="btn_primary">View GitHub</button>
+                </a>
+            </div>
+            <h6>Overview</h6>
+            <p>
+                Developed a fully offline expense tracking mobile application to give users a simple, ad-free way to manage their personal finances.
+                <br>
+                Most existing expense tracker apps rely heavily on internet connectivity and include intrusive advertisements. To address this, I built a lightweight and privacy-friendly solution that works entirely offline while still providing powerful financial insights.
+            </p>
 
+            <h6>Screeshots</h6>
+            <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" src="assets/images/expense_tracker/dashboard.jpg" alt="Project Screenshot" style="width: 260px;">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/expense_tracker/dashboard.jpg" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/categories.jpg" 
+                            data-caption="Income & expense categories"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/transactions.jpg" 
+                            data-caption="Account wise transactions"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/income_transactions.jpg" 
+                            data-caption="Income transactions"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/expense_transactions.jpg" 
+                            data-caption="Expense Transactions"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/category_report.jpg" 
+                            data-caption="Categori wise pie chart report"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+
+                        <img src="assets/images/expense_tracker/account_report.jpg" 
+                            data-caption="Account wise bar chart report"
+                            onclick="changeImage(this)"
+                            style="height: 100%;">
+                    </div>
+            </div>
+
+            <h6>Tech Stack</h6>
+            <ul>
+                <li>Framework: Flutter</li>
+                <li>Language: Dart</li>
+                <li>Database: SQLite (sqflite)</li>
+                <li>State Management: Provider</li>
+                <li>Charts & Visualization: Flutter chart libraries</li>
+            </ul>
+
+            <h6>Key Features</h6>
+            <ul>
+                <li>
+                    <b>Multi-Account Management</b> <br>
+                    Users can create multiple accounts, each supporting a different currency
+                </li>
+                <li>
+                    <b>Income & Expense Tracking</b> <br>
+                    Track financial activity per account with clear separation of income and expenses
+                </li>
+                <li>
+                    <b>Custom Categories</b> <br>
+                    Users can create and manage their own categories for better organization
+                </li>
+                <li>
+                    <b>Data Visualization</b>
+                    <ul>
+                        <li>Donut charts for income vs expense comparison</li>
+                        <li>Pie and bar charts for detailed financial reports</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Advanced Filtering</b> <br>
+                    View and filter transactions by date range and categories
+                </li>
+                <li>
+                    <b>Offline-First Functionality</b> <br>
+                    Fully functional without internet using local SQLite database
+                </li>
+                <li>
+                    <b>Ad-Free Experience</b> <br>
+                    Clean and distraction-free UI with no third-party ads
+                </li>
+            </ul>
+
+            <h6>My Role & Contribution</h6>
+            <ul>
+                <li>Designed and developed the entire application using Flutter from scratch</li>
+                <li>Implemented local database architecture using SQLite for offline data persistence</li>
+                <li>Built scalable data models for accounts, transactions, and categories</li>
+                <li>Developed dynamic UI components for charts and financial reporting</li>
+                <li>Focused on performance optimization and smooth user experience</li>
+                <li>Applied clean coding practices and structured architecture for maintainability</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Offline POS system -->
+     <section class="section" id="offline_pos">
+        <div class="project_card">
+            <h4>Offline POS System</h4>
+            <h6>Overview</h6>
+            <p>
+                Developed a fully offline Point of Sale (POS) system to support retail businesses in managing sales, inventory, and daily operations without relying on internet connectivity.
+                <br>
+                The system was designed to be fast, reliable, and easy to use, making it suitable for small and medium-sized businesses. It was successfully deployed to 20+ customers, generating revenue for the company.
+            </p>
+
+            <h6>Screenshots</h6>
+            <div class="gallery">
+                <!-- Main Image -->
+                <div class="main-image">
+                    <img id="currentImage" src="assets/images/offline_pos/dashboard.png" alt="Project Screenshot">
+                    <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                </div>
+                <!-- Thumbnails -->
+                <div class="thumbnails">
+                    <img src="assets/images/offline_pos/dashboard.png" 
+                        data-caption="Dashboard overview with real-time statistics"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/login.png" 
+                        data-caption="Login page"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/grn.png" 
+                        data-caption="GRN - Goods Receive Notice"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/inventory.png" 
+                        data-caption="Inventory page"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/invoice.png" 
+                        data-caption="Invoice page"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/receipt.png" 
+                        data-caption="Receipt"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/sales_report.png" 
+                        data-caption="Sales report"
+                        onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <h6>Tech Stack</h6>
+            <ul>
+                <li>Backend: PHP (OOP)</li>
+                <li>Architecture: Custom MVC Pattern</li>
+                <li>Frontend: HTML, CSS, JavaScript, jQuery</li>
+                <li>Asynchronous Handling: AJAX</li>
+                <li>Database: MySQL (Managed via MySQL Workbench)</li>
+            </ul>
+
+            <h6>Key Features</h6>
+            <ul>
+                <li>
+                    <b>Item & Category Management</b> <br>
+                    Create and manage item categories and product listings
+                </li>
+                <li>
+                    <b>GRN (Goods Received Note)</b> <br>
+                    Track incoming stock and update inventory accurately
+                </li>
+                <li>
+                    <b>Inventory Management</b> <br>
+                    Real-time tracking of stock levels and product availability
+                </li>
+                <li>
+                    <b>Billing & Invoicing</b> <br>
+                    Generate invoices with support for:
+                    <ul>
+                        <li>Percentage-based discounts</li>
+                        <li>Custom discount values</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Receipt Printing</b> <br>
+                    Printable receipts for completed transactions
+                </li>
+                <li>
+                    <b>Item Return Handling</b> <br>
+                    Process returns and adjust inventory accordingly
+                </li>
+                <li>
+                    <b>Reporting System</b> <br>
+                    Generate reports for sales, inventory, and business insights
+                </li>
+                <li>
+                    <b>Offline Functionality</b><br>
+                    Fully operational without internet connectivity
+                </li>
+            </ul>
+
+            <h6>My Role & Contribution</h6>
+            <ul>
+                <li>Designed and developed the entire POS system from scratch</li>
+                <li>Implemented a custom MVC architecture using OOP PHP</li>
+                <li>Built dynamic and responsive UI using jQuery and AJAX</li>
+                <li>Designed database structure and optimized queries for performance</li>
+                <li>Developed core modules including inventory, billing, and reporting systems</li>
+                <li>Handled system testing, debugging, and deployment</li>
+            </ul>
+        </div>
+     </section>
 
     <script src="js/script.js"></script>
 </body>

@@ -12,21 +12,24 @@
 <body>
     <!-- navigation bar -->
     <div id="nav_bar">
-        <div>
+        <button id="btn_menu" onclick="toggleNavBar()">Menu</button>
+
+        <div id="nav_title">
             <h4 style="margin: 0; font-size: 18px;">Portfolio</h4>
             <p style="margin: 0; font-size: 12px;">chinthana144@gmail.com</p>
         </div>
         
-        <div>
+        <div id="nav_items">
             <a href="#sec_hero" class="nav_link">Home</a>
             <a href="#sec_about_me" class="nav_link">About</a>
             <a href="#sec_skills" class="nav_link">Skills</a>
             <a href="projects.html" class="nav_link">Projects</a>
             <a href="experiences.html" class="nav_link">Experience</a>
+            <a href="#sec_education" class="nav_link">Education</a>
             <a href="#sec_contact" class="nav_link">Contact</a>
         </div>
 
-        <div>
+        <div id="nav_ref">
             <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
                 <img src="assets/icons/email_icon.png" alt="linkedin icon">
             </a>
@@ -40,8 +43,9 @@
     </div>
 
     <section class="section" id="sec_hero">
-        <div id="div_hero">
-            <div id="hero_content">
+        <div id="div_hero"> 
+            <img src="assets/images/cover_images/cover_image.jpg" alt="" id="img_cover_image">
+            <div id="hero_content" style="position: relative;">
                 <h5>Hi, I'm Chinthana Edirisinghe</h5>
                 <h1>Full Stack Software Engineer</h1>
                 <p>I build scalable Web & Mobile Applications using Laravel & Flutter</p>
@@ -289,6 +293,32 @@
                 <li>Streamlined sales operations across multiple camps</li>
             </ul>
         </div>
+    </section>
+
+    <!-- education section -->
+    <section class="section" id="sec_education">
+        <h4>Education</h4>
+        <h5>Bachelor of Science in Computer Science & Electronics</h5>
+        <p>
+            <b>University of Kelaniya</b> - Colombo, Sri Lanka <br>
+            <i>Completed in: March 2017</i>
+        </p>
+
+        <hr>
+
+        <h5>Higher Diploma in Software Engineering</h5>
+        <p>
+            <b>ESOFT Metro Campus</b> - Kurunegala, Sri Lanka <br>
+            <i>Completed in: January 2024</i>
+        </p>
+
+        <hr>
+
+        <h5>Diploma in Software Engineering</h5>
+        <p>
+            <b>ESOFT Metro Campus</b> - Kurunegala, Sri Lanka <br>
+            <i>Completed in: December 2021</i>
+        </p>
     </section>
 
     <!-- Contact Section -->
