@@ -66,6 +66,11 @@ body{
 #sec_hero{
     margin-top: 50px;
 }
+#img_cover_image{
+    position: absolute;
+    opacity: 0.3;
+    border-radius: 10px;
+}
 
 #div_hero{
     display: flex;
@@ -84,7 +89,13 @@ body{
     border: 2px solid black;
     padding: 10px 20px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
 }
+.btn_link:hover{
+    background-color: rgba(20, 15, 97, 0.3);
+}
+
 #img_hero_profile{
     width: 100%;
     border-radius: 20%;
@@ -104,7 +115,11 @@ body{
     background-color: #007bff;
     color: #eee;
     padding: 5px 10px;
-    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 5px;transition: all 0.4s ease;
+}
+.btn_primary:hover{
+    background-color: #0467d0;
 }
 
 /* --- skills section --- */
