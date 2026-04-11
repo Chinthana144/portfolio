@@ -48,6 +48,7 @@
             <a href="#cloudtik_sale" class="project_list_item">CloudTik Sales Mobile Application</a>
             <a href="#onecode" class="project_list_item">OneCode - Advanced ISP System</a>
             <a href="#expense_tracker" class="project_list_item">Extense Tracker</a>
+            <a href="#offline_pos" class="project_list_item">Offline POS System</a>
         </div>
       
     </section>
@@ -433,8 +434,7 @@
     <!-- Expense Tracker Project -->
     <section class="section" id="expense_tracker">
         <div class="project_card">
-            <div class="project_card">
-                <div class="div_title">
+            <div class="div_title">
                 <h4>Expense Tracker Mobile Application</h4>
                 <a href="https://github.com/Chinthana144/MyAccounts" target="_blank">
                     <button class="btn_primary">View GitHub</button>
@@ -548,6 +548,117 @@
             </ul>
         </div>
     </section>
+
+    <!-- Offline POS system -->
+     <section class="section" id="offline_pos">
+        <div class="project_card">
+            <h4>Offline POS System</h4>
+            <h6>Overview</h6>
+            <p>
+                Developed a fully offline Point of Sale (POS) system to support retail businesses in managing sales, inventory, and daily operations without relying on internet connectivity.
+                <br>
+                The system was designed to be fast, reliable, and easy to use, making it suitable for small and medium-sized businesses. It was successfully deployed to 20+ customers, generating revenue for the company.
+            </p>
+
+            <h6>Screenshots</h6>
+            <div class="gallery">
+                <!-- Main Image -->
+                <div class="main-image">
+                    <img id="currentImage" src="assets/images/offline_pos/dashboard.png" alt="Project Screenshot">
+                    <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                </div>
+                <!-- Thumbnails -->
+                <div class="thumbnails">
+                    <img src="assets/images/offline_pos/dashboard.png" 
+                        data-caption="Dashboard overview with real-time statistics"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/login.png" 
+                        data-caption="Login page"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/grn.png" 
+                        data-caption="GRN - Goods Receive Notice"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/inventory.png" 
+                        data-caption="Inventory page"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/invoice.png" 
+                        data-caption="Invoice page"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/receipt.png" 
+                        data-caption="Receipt"
+                        onclick="changeImage(this)">
+
+                    <img src="assets/images/offline_pos/sales_report.png" 
+                        data-caption="Sales report"
+                        onclick="changeImage(this)">
+                </div>
+            </div>
+
+            <h6>Tech Stack</h6>
+            <ul>
+                <li>Backend: PHP (OOP)</li>
+                <li>Architecture: Custom MVC Pattern</li>
+                <li>Frontend: HTML, CSS, JavaScript, jQuery</li>
+                <li>Asynchronous Handling: AJAX</li>
+                <li>Database: MySQL (Managed via MySQL Workbench)</li>
+            </ul>
+
+            <h6>Key Features</h6>
+            <ul>
+                <li>
+                    <b>Item & Category Management</b> <br>
+                    Create and manage item categories and product listings
+                </li>
+                <li>
+                    <b>GRN (Goods Received Note)</b> <br>
+                    Track incoming stock and update inventory accurately
+                </li>
+                <li>
+                    <b>Inventory Management</b> <br>
+                    Real-time tracking of stock levels and product availability
+                </li>
+                <li>
+                    <b>Billing & Invoicing</b> <br>
+                    Generate invoices with support for:
+                    <ul>
+                        <li>Percentage-based discounts</li>
+                        <li>Custom discount values</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Receipt Printing</b> <br>
+                    Printable receipts for completed transactions
+                </li>
+                <li>
+                    <b>Item Return Handling</b> <br>
+                    Process returns and adjust inventory accordingly
+                </li>
+                <li>
+                    <b>Reporting System</b> <br>
+                    Generate reports for sales, inventory, and business insights
+                </li>
+                <li>
+                    <b>Offline Functionality</b><br>
+                    Fully operational without internet connectivity
+                </li>
+            </ul>
+
+            <h6>My Role & Contribution</h6>
+            <ul>
+                <li>Designed and developed the entire POS system from scratch</li>
+                <li>Implemented a custom MVC architecture using OOP PHP</li>
+                <li>Built dynamic and responsive UI using jQuery and AJAX</li>
+                <li>Designed database structure and optimized queries for performance</li>
+                <li>Developed core modules including inventory, billing, and reporting systems</li>
+                <li>Handled system testing, debugging, and deployment</li>
+            </ul>
+        </div>
+     </section>
 
     <script src="js/script.js"></script>
 </body>
