@@ -11,11 +11,13 @@
 <body>
      <!-- navigation bar -->
     <div id="nav_bar">
-        <div>
+        <button id="btn_menu" onclick="toggleNavBar()">Menu</button>
+
+        <div id="nav_title">
             <h4 style="margin: 0; font-size: 18px;">Projects</h4>
             <p style="margin: 0; font-size: 12px;">chinthana144@gmail.com</p>
         </div>
-        <div>
+        <div id="nav_items">
             <a href="index.html" class="nav_link">Home</a>
             <a href="index.html#sec_about_me" class="nav_link">About</a>
             <a href="index.html#sec_skills" class="nav_link">Skills</a>
@@ -25,7 +27,7 @@
             <a href="index.html#sec_contact" class="nav_link">Contact</a>
         </div>
 
-        <div>
+        <div id="nav_ref">
             <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
                 <img src="assets/icons/email_icon.png" alt="linkedin icon">
             </a>
@@ -43,7 +45,7 @@
             Projects    
         </h4>
 
-        <div style="margin-top: 10px;">
+        <div id="div_project_links" style="margin-top: 10px;">
             <a href="#cloudtik" class="project_list_item">CloudTik - ISP Management System</a>
             <a href="#cloudtik_sale" class="project_list_item">CloudTik Sales Mobile Application</a>
             <a href="#onecode" class="project_list_item">OneCode - Advanced ISP System</a>

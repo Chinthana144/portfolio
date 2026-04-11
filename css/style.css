@@ -16,11 +16,20 @@ body{
     background-color: rgba(19, 15, 97, 0.82);
     color: #eee;
 }
-
+#btn_menu{
+    display: none;
+    border: none;
+    background-color: #0467d0;
+    color: #eee;
+    border-radius: 5px;
+}
+#nav_items{
+    margin-top: 10px;
+}
 .nav_link{
     text-decoration: none;
     color: #eee;
-    padding: 20px;
+    padding: 10px 20px;
     transition: all 0.4s ease;
 }
 .nav_link:hover{
@@ -70,6 +79,7 @@ body{
     position: absolute;
     opacity: 0.3;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 #div_hero{
@@ -190,3 +200,64 @@ body{
     z-index: 100;
     font-size: 11px;
 }
+
+/* --- Responsive Design --- */
+@media (max-width: 600px){
+    /* navigation bar */
+    #nav_title{
+        display: block;
+        justify-content: end;
+        text-align: end;
+    }
+    #nav_ref{
+        display: none;
+    }
+    #btn_menu{
+        display: block;
+    }
+    #nav_items{
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin-top: 0;
+        width: 40%;
+        background-color: rgba(19, 15, 97, 1);
+        z-index: 300;
+    }
+    .nav_link{
+        text-decoration: none;
+        color: #eee;
+        padding: 10px;
+        transition: all 0.4s ease;
+    }
+
+    #img_cover_image{
+        display: none;
+    }
+    .section{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .gallery{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .thumbnails{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: start;
+    }
+    .thumbnails img{
+        width: 60px;
+        height: auto;
+    }
+
+    #sec_projects{
+        display: flex;
+        flex-direction: column;
+    }
+}/* responsive for mobile */

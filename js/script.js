@@ -31,3 +31,17 @@ window.addEventListener("load", () => {
         if (firstThumb) firstThumb.classList.add("active");
     });
 });
+
+// navigation bar
+function toggleNavBar(){
+    const navItemList = document.getElementById("nav_items");
+
+    if(navItemList.style.display === "none" || navItemList.style.display == ""){
+        navItemList.style.display = "block";
+        navItemList.style.display = "flex";
+        navItemList.style.flexDirection = "column";
+    }
+    else{
+        navItemList.style.display = "none";
+    }
+}
