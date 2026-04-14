@@ -15,6 +15,7 @@ body{
     padding: 5px;
     background-color: rgba(19, 15, 97, 0.82);
     color: #eee;
+    z-index: 1000;
 }
 #btn_menu{
     display: none;
@@ -48,6 +49,7 @@ body{
 }
 
 .section{
+    position: relative;
     width: 80%;
     margin-left: 10%;
     background-color: #f9f5f5;
@@ -69,7 +71,6 @@ body{
     border-radius: 10px;
     color: #efefef;
 }
-
 
 /* hero section */
 #sec_hero{
@@ -199,6 +200,42 @@ body{
     right: 5px;
     z-index: 100;
     font-size: 11px;
+}
+
+/* --- project section --- */
+.div_project_links{
+    display: flex;
+    flex-direction: column;
+}
+.div_project_links a{
+    text-decoration: none;
+    color: #eee;
+    margin: 5px 0;
+    width: fit-content;
+}
+
+/* --- Experience Page --- */
+.img_company_logo{
+    position: absolute;
+    width: 100px;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.experience_list_item{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #31357a;
+    transition: all 0.4s ease;
+}
+.experience_list_item:hover{
+    background-color: #303ea6;
+}
+
+/* --- Education Section --- */
+.img_education_logo{
+    width: 100px;
 }
 
 /* --- Responsive Design --- */
