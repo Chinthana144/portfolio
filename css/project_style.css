@@ -31,12 +31,3 @@ h1, h2, h3, h4, h5, h6{
 #sec_projects{
     margin-top: 50px;
 }
-
-#div_project_links{
-    display: flex;
-    flex-direction: column;
-}
-#div_project_links a{
-    margin: 5px 0;
-    width: fit-content;
-}
