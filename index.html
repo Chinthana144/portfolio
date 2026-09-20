@@ -3,35 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinthana Portfolio</title>
+    <title>Chinthana Edirisinghe</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-    <!-- navigation bar -->
-    <div id="nav_bar">
-        <button id="btn_menu" onclick="toggleNavBar()">Menu</button>
-
-        <div id="nav_title">
-            <h4 style="margin: 0; font-size: 18px;">Portfolio</h4>
-            <p style="margin: 0; font-size: 12px;">chinthana144@gmail.com</p>
+    
+    <div id="navbar">
+        <div>
+            <h4>Chinthana Edirisinghe</h4>
+            <h6>Full-Stack Software Engineer</h6>
         </div>
-        
-        <div id="nav_items">
-            <a href="#sec_hero" class="nav_link">Home</a>
-            <a href="#sec_about_me" class="nav_link">About</a>
-            <a href="#sec_skills" class="nav_link">Skills</a>
-            <a href="projects.html" class="nav_link">Projects</a>
-            <a href="experiences.html" class="nav_link">Experience</a>
-            <a href="#sec_education" class="nav_link">Education</a>
-            <a href="#sec_contact" class="nav_link">Contact</a>
+        <div id="nav-items">
+            <a href="#" class="nav-item-links">Home</a>
+            <a href="#" class="nav-item-links">Projects</a>
+            <a href="#" class="nav-item-links">Skills</a>
+            <a href="#" class="nav-item-links">About</a>
         </div>
-
-        <div id="nav_ref">
+        <div id="nav_contact">
             <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
-                <img src="assets/icons/email_icon.png" alt="linkedin icon">
+                <img src="assets/icons/email_icon.png" alt="email icon">
             </a>
             <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" class="nav_icon_link">
                 <img src="assets/icons/linkedin_logo.png" alt="linkedin icon">
@@ -42,341 +33,148 @@
         </div>
     </div>
 
-    <section class="section" id="sec_hero">
-        <div id="div_hero"> 
-            <img src="assets/images/cover_images/cover_image.jpg" alt="" id="img_cover_image">
-            <div id="hero_content" style="position: relative;">
-                <h5>Hi, I'm Chinthana Edirisinghe</h5>
-                <h1>Full Stack Software Engineer</h1>
-                <p>I build scalable Web & Mobile Applications using Laravel & Flutter</p>
+    <div id="div_main">
+        <div id="div_top_space"></div>
+
+        <!-- Hero section -->
+        <section id="sec_hero" class="section">
+            <h2>Full-Stack Software Engineer</h2>
+            <div id="hero_sec_title"> 
                 <div>
-                    <a href="projects.html" class="btn_link">View Projects</a>
-                    <a href="#sec_contact" class="btn_link">Contact Me</a>
+                    <h3>
+                        I BUILD SOFTWARE <br>
+                        THAT SOLVES REAL PROBLEMS.
+                    </h3>
+                    <p>Full-stack software engineer building web, mobile and business applications.</p>
+                    <div id="hero_sec_stack">
+                        <h4>Laravel</h4>
+                        <h4>React JS</h4>
+                        <h4>Flutter</h4>
+                        <h4>C# / .Net</h4>
+                    </div>
+                    <a href="#" class="hero_link">View my work</a>
+                    <a href="#" class="hero_link">Contact</a>
                 </div>
-                
-            </div>
-            <div id="hero_profile">
-                <img src="assets/images/profiles/profile_1.jpg" alt="profile" id="img_hero_profile">
-            </div>
-        </div>
-    </section>
-
-    <!-- About me Section -->
-    <section class="section" id="sec_about_me">
-        <div id="div_about_me">
-            <h5>About Me</h5>
-            <p>
-                I'm a Full Stack Software Engineer with 6+ years of hands-on experience 
-                building real-world systems and applications.
-            </p>
-
-            <p>
-                I specialize in developing scalable web applications using Laravel
-                and creating mobile apps with Flutter. I've worked on, 
-            </p>
-
-            <ul>
-                <li>ISP management Systems</li>
-                <li>Tour Management Systems</li>
-                <li>POS Systems</li>
-                <li>Inventory Management Systems</li>
-                <li>Online & Offline Mobile Applications</li>
-            </ul>
-
-            <p>
-                I enjoy solving practical problems and building systems that are
-                efficient, reliable, and user-focused.
-            </p>
-
-            <p>
-                Currently, I'm focused on growing as a software engineer and
-                looking for opportunities where I can contribute to real-world
-                projects and continue improving my skills.
-            </p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section" id="sec_skills">
-        <div id="div_skills">
-            <h5>Skills</h5>
-            <ul>
-                <li>Backend: <b>PHP, Laravel</b></li>
-                <li>Frontend: <b>HTML, CSS, JavaScript, React(basics)</b></li>
-                <li>Mobile: <b>Dart, Flutter</b></li>
-                <li>Desktop: <b>C#, Windows Form Applcation</b></li>
-                <li>Database: <b>MySQL, SQLite</b></li>
-                <li>APIs & Integration: <b>REST API Development, API Integration, MikroTik API</b></li>
-                <li>Tools & Technologies: <b>Git, GitHub, Postman</b> </li>
-                <li>Graphic Design: <b>Photoshop, Illustrator </b></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="sec_projects">
-        <div id="div_projects">
-            <div class="div_title">
-                <h3>Projects</h3>
-                <a href="projects.html">
-                    <button class="btn_primary">View All Projects</button>
-                </a>
+                <div>
+                    <img src="assets/images/profiles/profile_1.jpg" alt="profile" id="img_profile">
+                </div>
             </div>
             
-            <div class="project_card">
-                <h5>CloudTik - ISP Management System</h5>
+        </section>
 
-                <h6>Overview</h6>
-                <p>
-                    CloudTik is a web-based ISP management system designed to handle customer subscriptions, billing, and network access across multiple camps. The system focuses on scalability, automation, and real-time network control.
-                </p>
-
-                <h6>Screenshots</h6>
-                <div class="gallery">
-                    <!-- Main Image -->
-                    <div class="main-image">
-                        <img id="currentImage" class="currentImage" src="assets/images/cloudtik/dashboard.png" alt="Project Screenshot">
-                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+        <!-- skills section -->
+        <section id="sec_skills" class="section">
+            <div id="sec_skill_top">
+                <h3>My Stack behind my work</h3>
+                <div class="skill_card_row">
+                    <div class="card skill_card">
+                        <h5>Backend</h5>
+                        <img src="assets/icons/backend.png" alt="backend" class="img_skill">
+                        <p>Building secure, structured backend systems and APIs with Laravel and PHP.</p>
+                        <ul>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>REST APIs</li>
+                            <li>Sanctum</li>
+                            <li>MVC</li>
+                            <li>OOP</li>
+                        </ul>
                     </div>
-                    <!-- Thumbnails -->
-                    <div class="thumbnails">
-                        <img src="assets/images/cloudtik/dashboard.png" 
-                            data-caption="Dashboard overview with real-time statistics"
-                            onclick="changeImage(this)"
-                            class="img_thumbnail">
-
-                        <img src="assets/images/cloudtik/customers.png" 
-                            data-caption="Customer management system"
-                            onclick="changeImage(this)"
-                            class="img_thumbnail">
-
-                        <img src="assets/images/cloudtik/invoice.png" 
-                            data-caption="Invoice page to issue subscription."
-                            onclick="changeImage(this)"
-                            class="img_thumbnail">
-
-                        <img src="assets/images/cloudtik/subscriptions.png" 
-                            data-caption="Subscriptions show status and user information"
-                            onclick="changeImage(this)"
-                            class="img_thumbnail">
-
-                        <img src="assets/images/cloudtik/user_access.png" 
-                            data-caption="Multi-camp management system"
-                            onclick="changeImage(this)"
-                            class="img_thumbnail">
-
-                        <img src="assets/images/cloudtik/logged.png" 
-                            data-caption="Successfull login page with expiry date and time."
-                            onclick="changeImage(this)">
+                    <div class="card skill_card">
+                        <h5>Frontend</h5>
+                        <img src="assets/icons/frontend.png" alt="backend" class="img_skill">
+                        <p>Creating responsive interfaces that turn complex functionality into simple user experiences.</p>
+                        <ul>
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>Tailwind CSS </li>
+                            <li>Blade</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="card skill_card">
+                        <h5>Mobile</h5>
+                        <img src="assets/icons/mobile-development.png" alt="backend" class="img_skill">
+                        <p>Developing cross-platform mobile applications connected to real-world APIs and backend systems.</p>
+                        <ul>
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                            <li>Provider</li>
+                            <li>Dio</li>
+                            <li>Android</li>
+                        </ul>
+                    </div>
+                    <div class="card skill_card">
+                        <h5>Desktop</h5>
+                        <img src="assets/icons/desktop-development.png" alt="backend" class="img_skill">
+                        <p>Building practical desktop applications for POS, inventory, and business operations.</p>
+                        <ul>
+                            <li>C#</li>
+                            <li>.NET</li>
+                            <li>Windows Forms</li>
+                            <li>MySQL</li>
+                            <li>Windows Service</li>
+                        </ul>
                     </div>
                 </div>
 
-                <h6>Tech Stack</h6>
-                <ul>
-                    <li>Laravel (Backend)</li>
-                    <li>Blade (Frontend)</li>
-                    <li>MySQL (Database)</li>
-                    <li>MikroTik RouterOS API (PHP)</li>
-                </ul>
-
-                <h6>Key Features</h6>
-                <ul>
-                    <li>
-                        Subscription Management System
+                <div class="skill_card_row">
+                    <div class="card skill_card">
+                        <h5>API & System Integration</h5>
+                        <img src="assets/icons/web-api-development.png" alt="backend" class="img_skill">
+                        <p>Connecting applications, services, devices, and APIs into a single working system.</p>
                         <ul>
-                            <li>Customizable packages (e.g., 15-day, 30-day plans)</li>
-                            <li>Flexible pricing configuration</li>
-                            <li>Subscription lifecycle tracking with statuses(Active, Running, Expired, Canceled, Transferred)</li>
+                            <li>REST APIs</li>
+                            <li>MikroTik RouterOS API</li>
+                            <li>Authentication</li>
+                            <li>Laravel Sanctum</li>
+                            <li>Axios</li>
+                            <li>Dio</li>
                         </ul>
-                    </li>
-                    <li>
-                        Customer Management
+                    </div>
+                    <div class="card skill_card">
+                        <h5>Data & Databases</h5>
+                        <img src="assets/icons/database.png" alt="backend" class="img_skill">
+                        <p>Designing structured data models and reliable database systems for web, mobile, and desktop applications.</p>
                         <ul>
-                            <li>Customer registration required for subscriptions</li>
-                            <li>Recovery support for lost subscriptions</li>
-                            <li>Real-time tracking of login and expiry timestamps</li>
+                            <li>MySQL</li>
+                            <li>SQLite</li>
+                            <li>Eloquent ORM</li>
+                            <li>Database Design</li>
+                            <li>ER Diagram</li>
                         </ul>
-                    </li>
-                    <li>
-                        Multi-Camp Management
+                    </div>
+                    <div class="card skill_card">
+                        <h5>Development Practices</h5>
+                        <img src="assets/icons/development-practice.png" alt="backend" class="img_skill">
+                        <p>Following practical development practices to build maintainable, secure, and scalable applications.</p>
                         <ul>
-                            <li>Manage multiple camps within a single system</li>
-                            <li>Transfer customers between camps seamlessly</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Postman</li>
+                            <li>CRUD</li>
+                            <li>RBAC</li>
+                            <li>Responsive Design</li>
                         </ul>
-                    </li>
-                    <li>
-                        Access Control System
+                    </div>
+                    <div class="card skill_card">
+                        <h5>Network & Business Systems</h5>
+                        <img src="assets/icons/network-adapter.png" alt="backend" class="img_skill">
+                        <p>Building software that connects business workflows with real-world infrastructure and operations.</p>
                         <ul>
-                            <li>Role-based page access control using permission toggles</li>
-                            <li>Supports multiple salespersons operating simultaneously in the same camp</li>
+                            <li>MikroTik</li>
+                            <li>RouterOS</li>
+                            <li>ISP Systems</li>
+                            <li>POS</li>
+                            <li>Inventory</li>
+                            <li>Business Automation</li>
                         </ul>
-                    </li>
-                    <li>
-                        Network Integration (MikroTik)
-                        <ul>
-                            <li>Integrated with MikroTik using RouterOS API</li>
-                            <li>Automated hotspot user creation and removal</li>
-                            <li>Real-time session handling via API</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Automation
-                        <ul>
-                            <li>Cron jobs to automatically handle expired subscriptions</li>
-                            <li>Ensures system consistency without manual intervention</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h6>My Role & Contributions</h6>
-                <ul>
-                    <li>Designed and developed the full system architecture</li>
-                    <li>Built backend APIs and business logic using Laravel</li>
-                    <li>Integrated MikroTik routers via RouterOS API for network control</li>
-                    <li>Implemented subscription lifecycle management system</li>
-                    <li>Developed multi-camp and role-based access control features</li>
-                    <li>Created responsive UI using Blade templates</li>
-                </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Experience Section -->
-    <section class="section" id="sec_experiences">
-        <div id="div_experiences">
-            <div class="div_title">
-                <h3>Experiences</h3>
-                <a href="experiences.html">
-                    <button class="btn_primary">View All Experience</button>
-                </a>
-            </div>
-            <h6>Trizent Infratech - Network Solutions Company</h6>
-            <p>
-                Role: <b>Full Stack Developer</b> <br>
-                Duration: <b>from March 2025 to present</b>
-            </p>
-
-            <h6>Overview</h6>
-            <p>
-                Trizent Infratech provides network infrastructure, CCTV installation, and internet services for labor camps. The company relied on manual spreadsheet-based workflows for managing customer subscriptions and sales operations.
-            </p>
-
-            <h6>Responsibilities & Contributions</h6>
-            <ul>
-                <li>Designed and developed the CloudTik ISP Management System to replace manual spreadsheet-based operations</li>
-                <li>Built a full-stack web application using Laravel, Blade, and MySQL</li>
-                <li>Integrated MikroTik routers using RouterOS API for automated user and session management</li>
-                <li>Developed features for customer registration, subscription handling, and real-time access control</li>
-                <li>Created multi-camp management functionality to support scalable operations</li>
-                <li>Implemented role-based access control for multiple salespersons</li>
-            </ul>
-
-            <h6>Challenges in Existing System</h6>
-            <ul>
-                <li>Sales and customer data managed manually using spreadsheets</li>
-                <li>No visibility into customer login time or subscription expiry</li>
-                <li>Limited to a single 30-day package with no flexibility</li>
-                <li>No customer history tracking (only basic details recorded)</li>
-                <li>No support for camp transfers or subscription recovery</li>
-                <li>Voucher-based system caused permanent access loss if credentials were misplaced</li>
-                <li>Difficult for salespersons to operate efficiently using mobile devices</li>
-            </ul>
-
-            <h6>Impact & Improvements</h6>
-            <ul>
-                <li>Replaced manual workflows with a centralized ISP management system</li>
-                <li>Enabled real-time tracking of customer login and subscription expiry</li>
-                <li>Introduced flexible subscription packages beyond fixed plans</li>
-                <li>Improved sales efficiency with a mobile-friendly system</li>
-                <li>Enabled customer history tracking and better data management</li>
-                <li>Reduced operational errors and improved overall system reliability</li>
-                <li>Streamlined sales operations across multiple camps</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- education section -->
-    <section class="section" id="sec_education">
-        <h4>Education</h4>
-        <div class="div_title">
-            <div>
-                <h5>Bachelor of Science in Computer Science & Electronics</h5>
-                <p>
-                    <b>University of Kelaniya</b> - Colombo, Sri Lanka <br>
-                    <i>Completed in: March 2017</i>
-                </p>
-            </div>
-            <div>
-                <img src="assets/images/education/Kelaniya.png" alt="" class="img_education_logo">
-            </div>
-        </div>
-        
-        <div>
-            <p>UAE attested degree certificate - University of Kelaniya</p>
-
-            <!-- view -->
-            <a href="assets/pdf/Chinthana Attested Degree_Certificate.pdf" target="_blank" class="btn_link">View</a>
-
-
-            <!-- download -->
-            <a href="assets/pdf/Chinthana Attested Degree_Certificate.pdf" download class="btn_link">Download</a>
-        </div>
-
-        <hr>
-
-        <div class="div_title">
-            <div>
-                <h5>Higher Diploma in Software Engineering</h5>
-                <p>
-                    <b>ESOFT Metro Campus</b> - Kurunegala, Sri Lanka <br>
-                    <i>Completed in: January 2024</i>
-                </p>
-            </div>
-            <div>
-                <img src="assets/images/education/esoft.png" alt="" class="img_education_logo">
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="div_title">
-            <div>
-                <h5>Diploma in Software Engineering</h5>
-                <p>
-                    <b>ESOFT Metro Campus</b> - Kurunegala, Sri Lanka <br>
-                    <i>Completed in: December 2021</i>
-                </p>
-            </div>
-            <div>
-                <img src="assets/images/education/esoft.png" alt="" class="img_education_logo">
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="sec_contact">
-        <h5>Contact Me</h5>
-        <p>Feel free to reach out for opportunities or collaborations.</p>
-
-        <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
-            <img src="assets/icons/email_icon.png" alt="linkedin icon">
-        </a>
-
-        <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" class="nav_icon_link">
-            <img src="assets/icons/linkedin_logo.png" alt="linkedin icon">
-        </a>
-
-        <a href="https://github.com/Chinthana144" class="nav_icon_link">
-            <img src="assets/icons/github_logo.png" alt="github icon">
-        </a>
-    </section>
-
-    <footer id="footer">
-        © 2026 Chinthana Edirisinghe
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
