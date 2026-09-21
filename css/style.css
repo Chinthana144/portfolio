@@ -82,6 +82,12 @@ body{
 .section{
     width: 80%;
     margin-left: 10%;
+    margin-top: 20px;
+}
+.section .title{
+    font-size: 28px;
+    color: var(--primary-accent);
+    margin: 10px 0px;
 }
 
 /* hero section */
@@ -165,4 +171,59 @@ body{
     margin-left: 25%;
     border-radius: 10px;
     padding: 5px;
+}
+
+/* projects section */
+.projects_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.project_card{
+    width: 49%;
+    padding: 5px 10px;
+}
+.project_card img{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+.project_card img:hover{
+    opacity: 1;
+}
+.project_card h5{
+    margin-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.project_card p{
+    font-size: 12px;
+    color: var(--secondary-text);
+    margin: 10px 0px;
+}
+.project_card a{
+    margin: 10px 0px;
+    text-decoration: none;
+    color: var(--primary-accent);
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.project_card a:hover{
+    border: 1px solid var(--bright-accent);
+}
+.tech_list{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+.tech_list li{
+    background-color: var(--border-color);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
