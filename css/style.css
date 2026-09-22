@@ -28,6 +28,7 @@ body{
     background-color: var(--secondary-background);
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 #nav_contact{
     display: flex;
@@ -181,7 +182,8 @@ body{
 }
 .project_card{
     width: 49%;
-    padding: 5px 10px;
+    padding: 20px 10px;
+    margin: 10px 0;
 }
 .project_card img{
     width: 100%;
@@ -191,6 +193,10 @@ body{
 }
 .project_card img:hover{
     opacity: 1;
+}
+.project_card .img_project_mobile{
+    width: 50%;
+    margin-left: 25%;
 }
 .project_card h5{
     margin-top: 10px;
@@ -218,7 +224,7 @@ body{
 .tech_list{
     display: flex;
     list-style-type: none;
-    margin: 0;
+    margin: 10px 0px;
     padding: 0;
     gap: 5px;
 }
