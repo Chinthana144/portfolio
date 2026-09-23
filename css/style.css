@@ -233,3 +233,33 @@ body{
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+/* about section */
+#div_about{
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+/* experience section */
+#div_experience{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.experience_card{
+    background-color: var(--card-color);
+    width: 49%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.title_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.img_company{
+    width: auto;
+    height: 80px;
+}
