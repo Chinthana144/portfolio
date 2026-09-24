@@ -263,3 +263,49 @@ body{
     width: auto;
     height: 80px;
 }
+
+/* education */
+.education_card{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--card-color);
+}
+.education_card .btn_link{
+    margin: 10px 0px;
+    text-decoration: none;
+    color: var(--primary-accent);
+    border: 1px solid var(--primary-accent);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.education_card p{
+    margin: 5px;
+}
+.education_details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.education_card h5{
+    font-size: 22px;
+}
+.img_education_logo{
+    width: 80px;
+    height: auto;
+}
+
+/* contact */
+#div_contact{
+    padding: 10px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+#div_contact_links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 10px 0;
+}
