@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinthana's Projects</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project_style.css">
+</head>
+<body>
+     <!-- navigation bar -->
+    <div id="nav_bar">
+        <button id="btn_menu" onclick="toggleNavBar()">Menu</button>
+
+        <div id="nav_title">
+            <h4 style="margin: 0; font-size: 18px;">Projects</h4>
+            <p style="margin: 0; font-size: 12px;">chinthana144@gmail.com</p>
+        </div>
+        <div id="nav_items">
+            <a href="index.html" class="nav_link">Home</a>
+            <a href="index.html#sec_about_me" class="nav_link">About</a>
+            <a href="index.html#sec_skills" class="nav_link">Skills</a>
+            <a href="projects.html" class="nav_link">Projects</a>
+            <a href="experiences.html" class="nav_link">Experience</a>
+            <a href="index.html#sec_education" class="nav_link">Education</a>
+            <a href="index.html#sec_contact" class="nav_link">Contact</a>
+        </div>
+
+        <div id="nav_ref">
+            <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
+                <img src="assets/icons/email_icon.png" alt="linkedin icon">
+            </a>
+            <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" class="nav_icon_link">
+                <img src="assets/icons/linkedin_logo.png" alt="linkedin icon">
+            </a>
+            <a href="https://github.com/Chinthana144" class="nav_icon_link">
+                <img src="assets/icons/github_logo.png" alt="github icon">
+            </a>
+        </div>
+    </div>
+
+    <div id="div_main">
+        <div id="sidebar">
+            sidebar
+        </div>
+
+        <div id="div_content">
+            <section class="section" id="sec_projects">
+                <h4>
+                    Projects    
+                </h4>
+
+                <div class="div_project_links" style="margin-top: 10px;">
+                    <a href="#cloudtik" class="project_list_item">CloudTik - ISP Management System</a>
+                    <a href="#cloudtik_sale" class="project_list_item">CloudTik Sales Mobile Application</a>
+                    <a href="#onecode" class="project_list_item">OneCode - Advanced ISP System</a>
+                    <a href="#expense_tracker" class="project_list_item">Extense Tracker</a>
+                    <a href="#cloud_pos" class="project_list_item">Cloud POS System</a>
+                    <a href="#offline_pos" class="project_list_item">Offline POS System</a>
+                </div>
+            
+            </section>
+
+            <!-- CloudTik Project -->
+            <section class="section" id="cloudtik">
+                <div id="div_projects">
+                    <div class="project_card">
+                        <div class="div_title">
+                        <h4>CloudTik - ISP Management System</h4>
+                        <a href="https://github.com/Chinthana144/CloudTik" target="_blank">
+                            <button class="btn_primary">View GitHub</button>
+                        </a>
+                    </div>
+
+                        <h6>Overview</h6>
+                        <p>
+                            CloudTik is a web-based ISP management system designed to handle customer subscriptions, billing, and network access across multiple camps. The system focuses on scalability, automation, and real-time network control.
+                        </p>
+
+                        <h6>Screenshots</h6>
+                        <div class="gallery">
+                            <!-- Main Image -->
+                            <div class="main-image">
+                                <img id="currentImage" class="currentImage" src="assets/images/cloudtik/dashboard.png" alt="Project Screenshot">
+                                <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                            </div>
+                            <!-- Thumbnails -->
+                            <div class="thumbnails">
+                                <img src="assets/images/cloudtik/dashboard.png" 
+                                    data-caption="Dashboard overview with real-time statistics"
+                                    onclick="changeImage(this)"
+                                    class="img_thumbnail">
+
+                                <img src="assets/images/cloudtik/customers.png" 
+                                    data-caption="Customer management system"
+                                    onclick="changeImage(this)"
+                                    class="img_thumbnail">
+
+                                <img src="assets/images/cloudtik/invoice.png" 
+                                    data-caption="Invoice page to issue subscription."
+                                    onclick="changeImage(this)"
+                                    class="img_thumbnail">
+
+                                <img src="assets/images/cloudtik/subscriptions.png" 
+                                    data-caption="Subscriptions show status and user information"
+                                    onclick="changeImage(this)"
+                                    class="img_thumbnail">
+
+                                <img src="assets/images/cloudtik/user_access.png" 
+                                    data-caption="Multi-camp management system"
+                                    onclick="changeImage(this)"
+                                    class="img_thumbnail">
+
+                                <img src="assets/images/cloudtik/logged.png" 
+                                    data-caption="Successfull login page with expiry date and time."
+                                    onclick="changeImage(this)">
+                            </div>
+                        </div>
+
+                        <h6>Tech Stack</h6>
+                        <ul>
+                            <li>Laravel (Backend)</li>
+                            <li>Blade (Frontend)</li>
+                            <li>MySQL (Database)</li>
+                            <li>MikroTik RouterOS API (PHP)</li>
+                        </ul>
+
+                        <h6>Key Features</h6>
+                        <ul>
+                            <li>
+                                Subscription Management System
+                                <ul>
+                                    <li>Customizable packages (e.g., 15-day, 30-day plans)</li>
+                                    <li>Flexible pricing configuration</li>
+                                    <li>Subscription lifecycle tracking with statuses(Active, Running, Expired, Canceled, Transferred)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Customer Management
+                                <ul>
+                                    <li>Customer registration required for subscriptions</li>
+                                    <li>Recovery support for lost subscriptions</li>
+                                    <li>Real-time tracking of login and expiry timestamps</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Multi-Camp Management
+                                <ul>
+                                    <li>Manage multiple camps within a single system</li>
+                                    <li>Transfer customers between camps seamlessly</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Access Control System
+                                <ul>
+                                    <li>Role-based page access control using permission toggles</li>
+                                    <li>Supports multiple salespersons operating simultaneously in the same camp</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Network Integration (MikroTik)
+                                <ul>
+                                    <li>Integrated with MikroTik using RouterOS API</li>
+                                    <li>Automated hotspot user creation and removal</li>
+                                    <li>Real-time session handling via API</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Automation
+                                <ul>
+                                    <li>Cron jobs to automatically handle expired subscriptions</li>
+                                    <li>Ensures system consistency without manual intervention</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h6>My Role & Contributions</h6>
+                        <ul>
+                            <li>Designed and developed the full system architecture</li>
+                            <li>Built backend APIs and business logic using Laravel</li>
+                            <li>Integrated MikroTik routers via RouterOS API for network control</li>
+                            <li>Implemented subscription lifecycle management system</li>
+                            <li>Developed multi-camp and role-based access control features</li>
+                            <li>Created responsive UI using Blade templates</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- CloudTik Sale Project -->
+            <section class="section" id="cloudtik_sale">
+                <div class="project_card">
+                    <div class="project_card">
+                        <div class="div_title">
+                        <h4>CloudTik Sales Mobile Application</h4>
+                        <a href="https://github.com/Chinthana144/CloudTik-Sales" target="_blank">
+                            <button class="btn_primary">View GitHub</button>
+                        </a>
+                    </div>
+                    <h6>Overview</h6>
+                    <p>
+                        CloudTik Sales Mobile Application is a Flutter-based mobile app designed for sales personnel to manage customer registrations, subscriptions, and sales activities directly from the field. The app integrates with the CloudTik web system via APIs to provide real-time data access and operations.
+                    </p>
+
+                    <h6>Screeshots</h6>
+                    <div class="gallery">
+                            <!-- Main Image -->
+                            <div class="main-image">
+                                <img id="currentImage" src="assets/images/cloudtik_sale/dashboard.jpg" alt="Project Screenshot" style="width: 260px;">
+                                <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                            </div>
+                            <!-- Thumbnails -->
+                            <div class="thumbnails">
+                                <img src="assets/images/cloudtik_sale/dashboard.jpg" 
+                                    data-caption="Dashboard overview with real-time statistics"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/cloudtik_sale/login.jpg" 
+                                    data-caption="User login page"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/cloudtik_sale/camp_select.jpg" 
+                                    data-caption="Camp portal page"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/cloudtik_sale/invoice.jpg" 
+                                    data-caption="Invoice page"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/cloudtik_sale/subscription_page.jpg" 
+                                    data-caption="Subscriptions page"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/cloudtik_sale/subscription_view.jpg" 
+                                    data-caption="Subscription view"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/cloudtik_sale/customer_history.jpg" 
+                                    data-caption="Show customer history of subscriptions"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+                            </div>
+                    </div>
+
+                    <h6>Tech Stack</h6>
+                    <ul>
+                        <li>Flutter (Dart)
+                        <li>REST API Integration</li>
+                        <li>Provider (State Management)</li>
+                        <li>SharedPreferences (Local Storage)</li>
+                    </ul>
+
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>
+                            Sales-Focused Workflow
+                            <ul>
+                                <li>Designed specifically for salespersons operating in camps</li>
+                                <li>Enables fast and efficient customer onboarding</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Customer Management
+                            <ul>
+                                <li>Register new customers directly from the app</li>
+                                <li>View and manage customer details</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Subscription Handling
+                            <ul>
+                                <li>View subscription details</li>
+                                <li>Reset and manage active subscriptions</li>
+                                <li>Handle customer device changes via MAC address updates</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Sales Tracking
+                            <ul>
+                                <li>View sales history specific to the logged-in user</li>
+                                <li>Ensures accountability and individual performance tracking</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Authentication & Persistence
+                            <ul>
+                                <li>Secure login via API</li>
+                                <li>Persistent login using SharedPreferences</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h6>My Role & Contributions</h6>
+                    <ul>
+                        <li>Developed the mobile application using Flutter</li>
+                        <li>Integrated REST APIs with the CloudTik backend</li>
+                        <li>Implemented state management using Provider</li>
+                        <li>Designed user-friendly interfaces for sales workflows</li>
+                        <li>Built local storage handling for session persistence</li>
+                        <li>Optimized app flow for real-world usage in camp environments</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- OneCode project -->
+            <section class="section" id="onecode">
+                <div class="project_card">
+                    <div class="project_card">
+                        <div class="div_title">
+                        <h4>OneCode - Advanced ISP Management System</h4>
+                        <a href="https://github.com/Chinthana144/OneCode" target="_blank">
+                            <button class="btn_primary">View GitHub</button>
+                        </a>
+                    </div>
+                    <h6>Overview</h6>
+                    <p>
+                        OneCode is an advanced ISP management system that extends the capabilities of CloudTik by introducing a flexible access model with both subscriptions and voucher-based authentication. The system is designed to support both long-term users and short-term visitors within labor camp environments.
+                    </p>
+
+                    <h6>Screenshots</h6>
+                    <div class="gallery">
+                            <!-- Main Image -->
+                            <div class="main-image">
+                                <img id="currentImage" src="assets/images/onecode/dashboard.png" alt="Project Screenshot">
+                                <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                            </div>
+                            <!-- Thumbnails -->
+                            <div class="thumbnails">
+                                <img src="assets/images/onecode/dashboard.png" 
+                                    data-caption="Dashboard overview with real-time statistics"
+                                    onclick="changeImage(this)">
+
+                                <img src="assets/images/onecode/invoice_page.png" 
+                                    data-caption="Invoice page with both Subscription and Voucher"
+                                    onclick="changeImage(this)">
+
+                                <img src="assets/images/onecode/cust_login.png" 
+                                    data-caption="Customer login with QR code"
+                                    onclick="changeImage(this)">
+
+                                <img src="assets/images/onecode/packages.png" 
+                                    data-caption="Multiple packages"
+                                    onclick="changeImage(this)">
+
+                                <img src="assets/images/onecode/access_plans.png" 
+                                    data-caption="Access Planes with both Subscription and Voucher"
+                                    onclick="changeImage(this)">
+
+                                <img src="assets/images/onecode/reports.png" 
+                                    data-caption="Reports Page"
+                                    onclick="changeImage(this)">
+                            </div>
+                    </div>
+
+                    <h6>Tech Stack</h6>
+                    <ul>
+                        <li>Laravel (Backend)</li>
+                        <li>Blade (Frontend)</li>
+                        <li>MySQL (Database)</li>
+                        <li>MikroTik RouterOS API</li>
+                        <li>JavaScript (QR Code Generation)</li>
+                    </ul>
+
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>
+                            Dual Access System (Subscriptions + Vouchers)
+                            <ul>
+                                <li>Supports registered users with subscriptions</li>
+                                <li>Enables temporary access via voucher codes for short-term users</li>
+                                <li>Provides flexibility based on customer needs</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Voucher-Based Authentication
+                            <ul>
+                                <li>Generates secure 8-digit numeric voucher codes</li>
+                                <li>Voucher activation binds user’s MAC address via MikroTik</li>
+                                <li>Prevents unauthorized sharing of access</li>
+                                <li>Voucher validity period of up to 3 months</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Polymorphic Access Plans
+                            <ul>
+                                <li>Implemented polymorphic relationships to handle both subscriptions and vouchers</li>
+                                <li>Unified system design for managing different access types</li>                
+                            </ul>
+                        </li>            
+                        <li>
+                            QR Code Integration
+                            <ul>
+                                <li>QR code generated on MikroTik hotspot login page</li>
+                                <li>Salesperson scans QR for faster customer handling</li>
+                                <li>Enables quick device reset and MAC address updates</li>
+                                <li>Improves speed and efficiency of the sales process</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Enhanced User Experience
+                            <ul>
+                                <li>Faster onboarding for customers without registration</li>
+                                <li>Transparent and user-friendly workflow</li>
+                                <li>Improves customer trust and service accessibility</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Core System Features
+                            <ul>
+                                <li>
+                                    Includes all functionalities of CloudTik:
+                                    <ul>
+                                        <li>Subscription management</li>
+                                        <li>Customer handling</li>
+                                        <li>Multi-camp management</li>
+                                        <li>Access control and automation</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h6>My Role & Contributions</h6>
+                    <ul>
+                        <li>Designed and developed the full system architecture</li>
+                        <li>Implemented voucher-based authentication system</li>
+                        <li>Designed polymorphic database relationships for flexible access handling</li>
+                        <li>Integrated MikroTik RouterOS API for network-level control</li>
+                        <li>Developed QR-based workflow to optimize sales and support processes</li>
+                        <li>Enhanced system usability for both salespersons and end users</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Expense Tracker Project -->
+            <section class="section" id="expense_tracker">
+                <div class="project_card">
+                    <div class="div_title">
+                        <h4>Expense Tracker Mobile Application</h4>
+                        <a href="https://github.com/Chinthana144/MyAccounts" target="_blank">
+                            <button class="btn_primary">View GitHub</button>
+                        </a>
+                    </div>
+                    <h6>Overview</h6>
+                    <p>
+                        Developed a fully offline expense tracking mobile application to give users a simple, ad-free way to manage their personal finances.
+                        <br>
+                        Most existing expense tracker apps rely heavily on internet connectivity and include intrusive advertisements. To address this, I built a lightweight and privacy-friendly solution that works entirely offline while still providing powerful financial insights.
+                    </p>
+
+                    <h6>Screeshots</h6>
+                    <div class="gallery">
+                            <!-- Main Image -->
+                            <div class="main-image">
+                                <img id="currentImage" src="assets/images/expense_tracker/dashboard.jpg" alt="Project Screenshot" style="width: 260px;">
+                                <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                            </div>
+                            <!-- Thumbnails -->
+                            <div class="thumbnails">
+                                <img src="assets/images/expense_tracker/dashboard.jpg" 
+                                    data-caption="Dashboard overview with real-time statistics"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/expense_tracker/categories.jpg" 
+                                    data-caption="Income & expense categories"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/expense_tracker/transactions.jpg" 
+                                    data-caption="Account wise transactions"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/expense_tracker/income_transactions.jpg" 
+                                    data-caption="Income transactions"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/expense_tracker/expense_transactions.jpg" 
+                                    data-caption="Expense Transactions"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/expense_tracker/category_report.jpg" 
+                                    data-caption="Categori wise pie chart report"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+
+                                <img src="assets/images/expense_tracker/account_report.jpg" 
+                                    data-caption="Account wise bar chart report"
+                                    onclick="changeImage(this)"
+                                    style="height: 100%;">
+                            </div>
+                    </div>
+
+                    <h6>Tech Stack</h6>
+                    <ul>
+                        <li>Framework: Flutter</li>
+                        <li>Language: Dart</li>
+                        <li>Database: SQLite (sqflite)</li>
+                        <li>State Management: Provider</li>
+                        <li>Charts & Visualization: Flutter chart libraries</li>
+                    </ul>
+
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>
+                            <b>Multi-Account Management</b> <br>
+                            Users can create multiple accounts, each supporting a different currency
+                        </li>
+                        <li>
+                            <b>Income & Expense Tracking</b> <br>
+                            Track financial activity per account with clear separation of income and expenses
+                        </li>
+                        <li>
+                            <b>Custom Categories</b> <br>
+                            Users can create and manage their own categories for better organization
+                        </li>
+                        <li>
+                            <b>Data Visualization</b>
+                            <ul>
+                                <li>Donut charts for income vs expense comparison</li>
+                                <li>Pie and bar charts for detailed financial reports</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Advanced Filtering</b> <br>
+                            View and filter transactions by date range and categories
+                        </li>
+                        <li>
+                            <b>Offline-First Functionality</b> <br>
+                            Fully functional without internet using local SQLite database
+                        </li>
+                        <li>
+                            <b>Ad-Free Experience</b> <br>
+                            Clean and distraction-free UI with no third-party ads
+                        </li>
+                    </ul>
+
+                    <h6>My Role & Contribution</h6>
+                    <ul>
+                        <li>Designed and developed the entire application using Flutter from scratch</li>
+                        <li>Implemented local database architecture using SQLite for offline data persistence</li>
+                        <li>Built scalable data models for accounts, transactions, and categories</li>
+                        <li>Developed dynamic UI components for charts and financial reporting</li>
+                        <li>Focused on performance optimization and smooth user experience</li>
+                        <li>Applied clean coding practices and structured architecture for maintainability</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Cloud POS System -->
+            <section class="section" id="cloud_pos">
+                <div class="project_card">
+                    <h4>Cloud POS System</h4>
+                    <h6>Overview</h6>
+                    <p>
+                        Collaborated with a team of developers to build a scalable cloud-based Point of Sale (POS) system designed to manage multiple businesses and retail operations within a single platform.
+                        <br>
+                        The system supports multi-shop management and flexible business workflows, allowing companies to operate with or without inventory tracking. It is currently used by 10+ companies, managing 50+ shops under one centralized system.
+                    </p>
+
+                    <h6>Tech Stack</h6>
+                    <ul>
+                        <li>Backend: PHP (OOP)</li>
+                        <li>Frontend: HTML, CSS, JavaScript, jQuery</li>
+                        <li>Asynchronous Handling: AJAX</li>
+                        <li>Database: MySQL</li>
+                    </ul>
+
+                    <h6>Screenshots</h6>
+                    <div class="gallery">
+                        <!-- Main Image -->
+                        <div class="main-image">
+                            <img id="currentImage" src="assets/images/cloud_pos/entry_page.png" alt="Project Screenshot">
+                            <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                        </div>
+                        <!-- Thumbnails -->
+                        <div class="thumbnails">
+                            <img src="assets/images/cloud_pos/entry_page.png" 
+                                data-caption="Entrancepage of the system"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/cloud_pos/dashboard.png" 
+                                data-caption="Dashboard overview with real-time statistics"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/cloud_pos/grn.png" 
+                                data-caption="Goods receive note"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/cloud_pos/store.png" 
+                                data-caption="Shop store"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/cloud_pos/products.png" 
+                                data-caption="Products and service page"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/cloud_pos/shops.png" 
+                                data-caption="Multiple shop management"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/cloud_pos/reports.png" 
+                                data-caption="Reports Page"
+                                onclick="changeImage(this)">
+                        </div>
+                    </div>
+
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>
+                            <b>Multi-Shop Management</b><br>
+                            Manage multiple businesses and branches under a single system
+                        </li>
+                        <li>
+                            <b>Flexible Inventory Handling</b>
+                            <ul>
+                                <li>With inventory</li>
+                                <li>Without inventory</li>
+                                <li>Negative (minus) inventory support</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Advanced Billing System</b>
+                            <ul>
+                                <li>Separate invoice flows for Retail and Wholesale</li>
+                                <li>Customizable pricing and workflows</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Product & Service Management</b><br>
+                            Support for both physical products and service-based items
+                        </li>
+                        <li>
+                            <b>GRN (Goods Received Note)</b><br>
+                            Efficient stock intake and inventory updates
+                        </li>
+                        <li>
+                            <b>Barcode & Receipt Management</b><br>
+                            <ul>
+                                <li>Barcode generation and printing</li>
+                                <li>
+                                    Multiple receipt formats:
+                                    <ul>
+                                        <li>58mm</li>
+                                        <li>80mm</li>
+                                        <li>A5</li>
+                                        <li>4</li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Expense Tracking</b><br>
+                            Record and manage operational expenses
+                        </li>
+                    </ul>
+
+                    <h6>My Role & Contribution</h6>
+                    <ul>
+                        <li>Led the database design, ensuring scalability and flexibility for multi-business operations</li>
+                        <li>Collaborated with a team of 3 developers to design and implement core system features</li>
+                        <li>Contributed to backend development using OOP PHP and custom architecture</li>
+                        <li>Worked on dynamic UI components using jQuery and AJAX</li>
+                        <li>Ensured system stability and performance across multiple client environments</li>
+                    </ul>
+
+                    <h6>Impact</h6>
+                    <ul>
+                        <li>Successfully deployed to 10+ companies</li>
+                        <li>Supporting 50+ active shops within a single platform</li>
+                        <li>Enabled businesses to efficiently manage sales, inventory, and operations in real-time</li>
+                        <li>Designed a flexible system adaptable to different business models</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Offline POS system -->
+            <section class="section" id="offline_pos">
+                <div class="project_card">
+                    <h4>Offline POS System</h4>
+                    <h6>Overview</h6>
+                    <p>
+                        Developed a fully offline Point of Sale (POS) system to support retail businesses in managing sales, inventory, and daily operations without relying on internet connectivity.
+                        <br>
+                        The system was designed to be fast, reliable, and easy to use, making it suitable for small and medium-sized businesses. It was successfully deployed to 20+ customers, generating revenue for the company.
+                    </p>
+
+                    <h6>Screenshots</h6>
+                    <div class="gallery">
+                        <!-- Main Image -->
+                        <div class="main-image">
+                            <img id="currentImage" src="assets/images/offline_pos/dashboard.png" alt="Project Screenshot">
+                            <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                        </div>
+                        <!-- Thumbnails -->
+                        <div class="thumbnails">
+                            <img src="assets/images/offline_pos/dashboard.png" 
+                                data-caption="Dashboard overview with real-time statistics"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/offline_pos/login.png" 
+                                data-caption="Login page"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/offline_pos/grn.png" 
+                                data-caption="GRN - Goods Receive Notice"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/offline_pos/inventory.png" 
+                                data-caption="Inventory page"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/offline_pos/invoice.png" 
+                                data-caption="Invoice page"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/offline_pos/receipt.png" 
+                                data-caption="Receipt"
+                                onclick="changeImage(this)">
+
+                            <img src="assets/images/offline_pos/sales_report.png" 
+                                data-caption="Sales report"
+                                onclick="changeImage(this)">
+                        </div>
+                    </div>
+
+                    <h6>Tech Stack</h6>
+                    <ul>
+                        <li>Backend: PHP (OOP)</li>
+                        <li>Architecture: Custom MVC Pattern</li>
+                        <li>Frontend: HTML, CSS, JavaScript, jQuery</li>
+                        <li>Asynchronous Handling: AJAX</li>
+                        <li>Database: MySQL (Managed via MySQL Workbench)</li>
+                    </ul>
+
+                    <h6>Key Features</h6>
+                    <ul>
+                        <li>
+                            <b>Item & Category Management</b> <br>
+                            Create and manage item categories and product listings
+                        </li>
+                        <li>
+                            <b>GRN (Goods Received Note)</b> <br>
+                            Track incoming stock and update inventory accurately
+                        </li>
+                        <li>
+                            <b>Inventory Management</b> <br>
+                            Real-time tracking of stock levels and product availability
+                        </li>
+                        <li>
+                            <b>Billing & Invoicing</b> <br>
+                            Generate invoices with support for:
+                            <ul>
+                                <li>Percentage-based discounts</li>
+                                <li>Custom discount values</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Receipt Printing</b> <br>
+                            Printable receipts for completed transactions
+                        </li>
+                        <li>
+                            <b>Item Return Handling</b> <br>
+                            Process returns and adjust inventory accordingly
+                        </li>
+                        <li>
+                            <b>Reporting System</b> <br>
+                            Generate reports for sales, inventory, and business insights
+                        </li>
+                        <li>
+                            <b>Offline Functionality</b><br>
+                            Fully operational without internet connectivity
+                        </li>
+                    </ul>
+
+                    <h6>My Role & Contribution</h6>
+                    <ul>
+                        <li>Designed and developed the entire POS system from scratch</li>
+                        <li>Implemented a custom MVC architecture using OOP PHP</li>
+                        <li>Built dynamic and responsive UI using jQuery and AJAX</li>
+                        <li>Designed database structure and optimized queries for performance</li>
+                        <li>Developed core modules including inventory, billing, and reporting systems</li>
+                        <li>Handled system testing, debugging, and deployment</li>
+                    </ul>
+                </div>
+        </section>
+    </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
