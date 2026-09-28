@@ -16,7 +16,7 @@
             <h6>Full-Stack Software Engineer</h6>
         </div>
         <div id="nav-items">
-            <a href="#" class="nav-item-links">Home</a>
+            <a href="index.html" class="nav-item-links">Home</a>
             <a href="#" class="nav-item-links">Projects</a>
             <a href="#" class="nav-item-links">Skills</a>
             <a href="#" class="nav-item-links">About</a>
@@ -48,9 +48,55 @@
                         <button class="btn_primary">View GitHub</button>
                     </a>
                 </div>
+
+                <h6>Overview</h6>
+                <p>CloudTik is a web-based ISP management system designed to handle customer subscriptions, billing, and network access across multiple camps. The system focuses on scalability, automation, and real-time network control.</p>
+
+                <h6>Screenshots</h6>
+                <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" class="currentImage" src="assets/images/cloudtik/dashboard.png" alt="Project Screenshot">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/cloudtik/dashboard.png" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
+
+                        <img src="assets/images/cloudtik/customers.png" 
+                            data-caption="Customer management system"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
+
+                        <img src="assets/images/cloudtik/invoice.png" 
+                            data-caption="Invoice page to issue subscription."
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
+
+                        <img src="assets/images/cloudtik/subscriptions.png" 
+                            data-caption="Subscriptions show status and user information"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
+
+                        <img src="assets/images/cloudtik/user_access.png" 
+                            data-caption="Multi-camp management system"
+                            onclick="changeImage(this)"
+                            class="img_thumbnail">
+
+                        <img src="assets/images/cloudtik/logged.png" 
+                            data-caption="Successfull login page with expiry date and time."
+                            onclick="changeImage(this)">
+                    </div>
+                </div>
+
             </section>
        </div>
     </div>
+
+    <script src="js/project_script.js"></script>
 
 </body>
 </html>

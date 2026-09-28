@@ -45,3 +45,43 @@ body{
     border-radius: 10px;
     padding: 10px;
 }
+.div_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gallery{
+    width: 100%;
+
+}
+.main-image{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.main-image img{
+    width: 100%
+}
+
+.thumbnails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+.thumbnails img{
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.thumbnails img:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
