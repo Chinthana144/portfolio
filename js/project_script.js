@@ -22,4 +22,4 @@ function changeImage(element) {
     });
 
     element.classList.add("active");
-}
+}//change image
