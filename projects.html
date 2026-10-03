@@ -104,7 +104,7 @@
             </a>
 
             <!-- Retail POS -->
-            <a href="#" class="link_project">
+            <a href="#sec_retail_pos" class="link_project">
                 <div class="div_project_link"> 
                     <h5>Retail POS</h5>
                     <p>Retail POS system - Desktop Application</p>
@@ -857,7 +857,52 @@
                 <h6>Overview</h6>
                 <p>
                     A desktop-based Retail Point of Sale (POS) system designed to manage day-to-day retail operations.
+                    <br>
+                    Provides an integrated solution for product management, inventory, purchasing, sales, expenses, and returns.
+                    <br>
+                    Designed with a user-friendly Windows interface suitable for small and medium-sized retail businesses.
+                    <br>
+                    Includes a customizable color theme to personalize the application's appearance.
                 </p>
+
+                <h6>Screenshots</h6>
+                <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" src="assets/images/retail_pos_a/dashboard.png" alt="Project Screenshot">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/retail_pos_a/dashboard.png" 
+                            data-caption="Dashboard overview with real-time statistics"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/retail_pos_a/invoices_page.png" 
+                            data-caption="Login page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/retail_pos_a/pos_screen.png" 
+                            data-caption="GRN - Goods Receive Notice"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/retail_pos_a/products_page.png" 
+                            data-caption="Inventory page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/retail_pos_a/settings.png" 
+                            data-caption="Invoice page"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/retail_pos_a/shop_page.png" 
+                            data-caption="Receipt"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/retail_pos_a/sales_report.png" 
+                            data-caption="Sales report"
+                            onclick="changeImage(this)">
+                    </div>
+                </div>
 
                 <h6>Tech Stack</h6>
                 <ul>
@@ -870,7 +915,69 @@
                     <li>Git / GitHub (if you have the project on GitHub)</li>
                 </ul>
                 
+                <h6>Key Features</h6>
+                <ul>
+                    <li><b>Product Management</b></li>
+                    <ul>
+                        <li>Create, update, and manage products.</li>
+                        <li>Organize products using categories.</li>
+                        <li>Maintain product pricing and stock information.</li>
+                    </ul>
+                    <li><b>Category Management</b></li>
+                    <ul>
+                        <li>Create and manage product categories.</li>
+                        <li>Associate products with their respective categories.</li>
+                    </ul>
+                    <li><b>Inventory Management</b></li>
+                    <ul>
+                        <li>Track current stock levels.</li>
+                        <li>Update inventory based on purchases and sales.</li>
+                        <li>Monitor stock movements.</li>
+                    </ul>
+                    <li><b>Goods Received Note (GRN)</b></li>
+                    <ul>
+                        <li>Record incoming stock from suppliers.</li>
+                        <li>Update inventory based on received quantities.</li>
+                        <li>Maintain purchase/receiving records.</li>
+                    </ul>
+                    <li><b>Point of Sale / Invoicing</b></li>
+                    <ul>
+                        <li>Create customer invoices through the POS interface.</li>
+                        <li>Add products and quantities to sales.</li>
+                        <li>Calculate totals and process sales transactions.</li>
+                    </ul>
+                    <li><b>Sales Returns</b></li>
+                    <ul>
+                        <li>Handle returned products.</li>
+                        <li>Update inventory when items are returned.</li>
+                        <li>Maintain return transaction records.</li>
+                    </ul>
+                    <li><b>Expense Management</b></li>
+                    <ul>
+                        <li>Record and manage business expenses.</li>
+                        <li>Maintain expense history for business tracking.</li>
+                    </ul>
+                    <li><b>Customizable UI</b></li>
+                    <ul>
+                        <li>Multiple color/theme options.</li>
+                        <li>Allows users to personalize the application's appearance.</li>
+                    </ul>
+                </ul>
+
+                <h6>My Role & Contribution</h6>
+                <ul>
+                    <li>Designed and developed the application as a full-stack desktop developer.</li>
+                    <li>Designed the MySQL database structure for products, categories, inventory, GRNs, invoices, returns, and expenses.</li>
+                    <li>Developed the application's Windows Forms user interface using C#.</li>
+                    <li>Implemented business logic and database operations using C#/.NET and MySQL.</li>
+                    <li>Developed the POS sales and invoicing workflow.</li>
+                    <li>Implemented inventory updates based on GRN, sales, and returns.</li>
+                    <li>Developed reusable components and functions to keep the application maintainable.</li>
+                    <li>Implemented the customizable color theme across the application.</li>
+                    <li>Tested the application workflows and fixed functional and UI issues during development.</li>
+                </ul>
             </section>
+            
        </div>
     </div>
 
