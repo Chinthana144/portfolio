@@ -550,6 +550,75 @@
                             style="height: 100%;">
                     </div>
                 </div>
+
+                <h6>Tech Stack</h6>
+                <ul>
+                    <li>Flutter</li>
+                    <li>Dart</li>
+                    <li>Laravel Sanctum</li>
+                    <li>REST API</li>
+                    <li>Dio</li>
+                    <li>Provider</li>
+                    <li>SharedPreferences</li>
+                    <li>MySQL (AccessHub backend)</li>
+                </ul>
+
+                <h6>Key Features</h6>
+                <ul>
+                    <li>
+                        <b>Secure API Authentication</b>
+                        <ul>
+                            <li>Connects to the AccessHub Laravel application through REST APIs.</li>
+                            <li>Uses Laravel Sanctum token authentication for API access.</li>
+                            <li>Authenticates users against the existing AccessHub user database.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Code Management</b>
+                        <ul>
+                            <li>View internet access code details.</li>
+                            <li>Reset codes when required.</li>
+                            <li>Enable and disable codes remotely.</li>
+                            <li>Retrieve up-to-date code information from the AccessHub API.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Camp-Based Access Control</b>
+                        <ul>
+                            <li>Each sales person is assigned access to specific camps through the AccessHub web application.</li>
+                            <li>The mobile application respects the user's assigned camp permissions.</li>
+                            <li>Users cannot access or manage codes belonging to unauthorized camps.</li>
+                            <li>Access permissions are controlled centrally from the AccessHub web application rather than duplicated in the mobile application.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>State Management</b>
+                        <ul>
+                            <li>Uses Provider for application state management.</li>
+                            <li>Manages authentication and API-related application state efficiently.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Persistent Login</b>
+                        <ul>
+                            <li>Uses SharedPreferences to store login credentials for convenient access.</li>
+                            <li>Allows returning users to access the application without repeatedly entering their credentials.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h6>My Role & Contribution</h6>
+                <ul>
+                    <li>Designed and developed the mobile application using Flutter and Dart.</li>
+                    <li>Designed and implemented the communication layer between Flutter and the Laravel backend using Dio.</li>
+                    <li>Integrated Laravel Sanctum authentication for secure API communication.</li>
+                    <li>Implemented code management operations including view, reset, enable, and disable.</li>
+                    <li>Implemented Provider-based state management.</li>
+                    <li>Implemented persistent login functionality using SharedPreferences.</li>
+                    <li>Integrated the application's authorization flow with the existing AccessHub camp-based access control system.</li>
+                    <li>Ensured sales personnel could only manage users and codes belonging to their authorized camps.</li>
+                    <li>Tested API communication, authentication, authorization, and code management workflows.</li>
+                </ul>
             </section>
 
             <!-- onecode -->
