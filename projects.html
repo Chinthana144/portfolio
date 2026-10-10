@@ -1105,7 +1105,7 @@
                 </ul>
             </section>
 
-            <!-- desktop application -->
+            <!-- retail pos desktop application -->
             <section id="sec_retail_pos" class="section">
                 <div class="div_title"> 
                     <h5>Retail POS - Desktop Application</h5>
@@ -1236,7 +1236,131 @@
                     <li>Tested the application workflows and fixed functional and UI issues during development.</li>
                 </ul>
             </section>
-            
+
+            <!-- camp scanner service -->
+            <section id="sec_scanner_service" class="section">
+                <div class="div_title"> 
+                    <h5>CampScannerService — Automated Network Scanning Service</h5>
+                    <a href="https://github.com/Chinthana144/CampScannerService" target="_blank">
+                        <button class="btn_primary">View GitHub</button>
+                    </a>
+                </div>
+
+                <h6>Overview</h6>
+                <p>
+                    A C# Windows Service developed to identify potential internet-sharing users across the company's network.
+                    <br>
+                    Automates Nmap port scanning every 15 minutes, records scan results in daily log files, and sends detected information to a cloud-based system through an API.
+                </p>
+
+                <h6>Screenshots</h6>
+                <div class="gallery">
+                    <!-- Main Image -->
+                    <div class="main-image">
+                        <img id="currentImage" src="assets/images/scanner_service/code_ide.png" alt="Project Screenshot">
+                        <p id="imageCaption">Dashboard overview with real-time statistics</p>
+                    </div>
+                    <!-- Thumbnails -->
+                    <div class="thumbnails">
+                        <img src="assets/images/scanner_service/code_ide.png" 
+                            data-caption="Code with ide - Visual Studio"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/scanner_service/ip_identify.png" 
+                            data-caption="Identified result"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/scanner_service/output_log.png" 
+                            data-caption="Output log"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/scanner_service/run_scan.png" 
+                            data-caption="Run Scan method"
+                            onclick="changeImage(this)">
+
+                        <img src="assets/images/scanner_service/send_api.png" 
+                            data-caption="Send API method."
+                            onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <h6>Tech Stack</h6>
+                <ul>
+                    <li>C#</li>
+                    <li>.NET / Windows Service</li>
+                    <li>Nmap</li>
+                    <li>IP Subnet Management</li>
+                    <li>REST API Integration</li>
+                    <li>File I/O (Text Logging)</li>
+                    <li>Windows Services</li>
+                </ul>
+
+                <h6>Key Features</h6>
+                <ul>
+                    <li>
+                        <b>Automated Network Scanning</b>
+                        <ul>
+                            <li>Runs automatically as a Windows Service without requiring manual intervention.</li>
+                            <li>Executes network scans every 15 minutes.</li>
+                            <li>Uses Nmap to identify devices with specific network ports open.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Subnet Segmentation</b>
+                        <ul>
+                            <li>Divides large IP address ranges into smaller subnets for scanning.</li>
+                            <li>Scans each subnet systematically to improve network coverage.</li>
+                            <li>Targets specific IP ranges and ports associated with internet-sharing applications.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Internet-Sharing Detection</b>
+                        <ul>
+                            <li>Identifies devices using specific ports associated with applications such as NetShear.</li>
+                            <li>Detects potential unauthorized internet sharing across the company's network.</li>
+                            <li>Sends detected device information to the cloud system for further processing.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Cloud API Integration</b>
+                        <ul>
+                            <li>Communicates with the company's cloud application through a REST API.</li>
+                            <li>Automatically submits detected device information when matching ports are found.</li>
+                            <li>Eliminates the need to manually collect and transfer scan results.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Automated Daily Logging</b>
+                        <ul>
+                            <li>Automatically creates a text log file for each day.</li>
+                            <li>Records scanning activity and relevant detection results.</li>
+                            <li>Maintains daily logs for troubleshooting, monitoring, and reviewing scan activity.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Background Execution</b>
+                        <ul>
+                            <li>Runs continuously in the background as a Windows Service.</li>
+                            <li>Performs scheduled scans without requiring a user to launch the application.</li>
+                            <li>Reduces manual network monitoring effort.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h6>My Role & Contribution</h6>
+                <ul>
+                    <li>Designed and developed the Windows Service using C# and .NET.</li>
+                    <li>Integrated Nmap to perform automated network port scanning.</li>
+                    <li>Implemented IP subnet segmentation to scan large network ranges in smaller sections.</li>
+                    <li>Developed a scheduled scanning mechanism to execute scans every 15 minutes.</li>
+                    <li>Implemented port detection logic to identify potential internet-sharing activity.</li>
+                    <li>Integrated the service with the company's cloud application through API requests.</li>
+                    <li>Developed automated daily text-file logging for recording scan activity and results.</li>
+                    <li>Implemented background execution to enable continuous, unattended network monitoring.</li>
+                    <li>Helped automate the company's internet-sharing detection process, reducing reliance on manual Nmap scans.</li>
+                </ul>
+            </section>
+
        </div>
     </div>
 

@@ -49,6 +49,7 @@ body{
 }
 .div_project_link:hover{
     border: 1px solid var(--bright-accent);
+    transform: translateY(-2px);
 }
 .div_project_link h5{
     font-size: 18px;
