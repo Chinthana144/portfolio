@@ -23,3 +23,10 @@ function changeImage(element) {
 
     element.classList.add("active");
 }//change image
+
+function toggleSection(sectionID)
+{
+    const section = document.getElementById(sectionID);
+
+    section.classList.add('active');
+}

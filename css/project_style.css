@@ -39,17 +39,28 @@ body{
 .link_project{
     text-decoration: none;
 }
-.div_project_link{
-    margin: 10px 0;
+.btn_project{
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    margin: 5px 0;
+    background-color: inherit;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    padding: 5px;
-    background-color: var(--secondary-background);
-    transition: 0.4s ease;
+    transition: all 0.4s ease;
 }
-.div_project_link:hover{
+.btn_project:hover{
     border: 1px solid var(--bright-accent);
     transform: translateY(-2px);
+}
+
+.div_project_link{
+    /* margin: 10px 0; */
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 8px;
+    background-color: var(--secondary-background);
+    transition: 0.4s ease;
 }
 .div_project_link h5{
     font-size: 18px;
@@ -92,6 +103,9 @@ body{
     /* box-shadow: 0 0 20px var(--border-color); */
     border-radius: 5px;
     width: fit-content;
+}
+.section.active{
+    display: block;
 }
 
 .div_title{
