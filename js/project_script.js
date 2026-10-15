@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', ()=>{
+    const elements = document.getElementsByClassName('section');
+
+    for(const element of elements){
+        element.style.display = "none";
+        // console.log('running');
+    }
+
+    const cloudtik = document.getElementById('sec_cloudtik');
+    cloudtik.style.display = "block";
+    cloudtik.classList.add('active');
+
+});
+
 function changeImage(element) {
     const gallery = element.closest(".gallery");
 
@@ -26,7 +40,14 @@ function changeImage(element) {
 
 function toggleSection(sectionID)
 {
+    const elements = document.getElementsByClassName('section');
+
+    for(const element of elements){
+        element.style.display = "none";
+    }
+    
     const section = document.getElementById(sectionID);
 
+    section.style.display = "block";
     section.classList.add('active');
 }
