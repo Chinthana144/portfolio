@@ -1,0 +1,45 @@
+:root{
+    --main-background : #080D18;
+    --secondary-background : #0D1424;
+    --card-color: #111B2E;
+    --border-color: #1E2D46;
+    --main-text: #F1F5F9;
+    --secondary-text: #94A3B8;
+    --primary-accent: #3B82F6;
+    --bright-accent: #38BDF8; 
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-background);
+    color: var(--main-text);
+    font-family: sans-serif;
+}
+#div_top_space{
+    height: 70px;
+}
+
+#exp_navbar{
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#exp_navbar button{
+    width: 20%;
+    padding: 5px;
+    text-align: left;
+    background-color: var(--card-color);
+    color: var(--secondary-text);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.btn_title{
+    font-size: 18px;
+}
