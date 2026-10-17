@@ -43,3 +43,58 @@ body{
 .btn_title{
     font-size: 18px;
 }
+
+/* main */
+#div_main{
+    margin-top: 70px;
+}
+
+.exp_card{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+}
+.exp_card h6{
+    font-size: 16px;
+    color: var(--main-text);
+    margin: 10px 0;
+}
+.exp_card p{
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+.exp_card ul{
+    list-style-type: none;
+}
+.exp_card li{
+    font-size: 12px;
+    color: var(--secondary-text);
+    background-color: var(--border-color);
+    margin: 5px 0;
+    padding: 5px 10px;
+    /* box-shadow: 0 0 20px var(--border-color); */
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.div_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.h5_title{
+    font-size: 22px;
+    font-family: sans-serif;
+    color: var(--primary-accent);
+}
+.p_title_description{
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+.img_company_logo{
+    height: 100px;
+    width: auto;
+}
