@@ -37,28 +37,28 @@
     <div id="div_top_space"></div>
 
     <div id="exp_navbar">
-        <button>
+        <button class="btn_experience" onclick="toggleExperience('exp_trizent')">
             <div>
                 <h6 class="btn_title">1. Trizent Infratech</h6>
                 <p>Network Solution (Currently Working)</p>
             </div>
         </button>
 
-        <button>
+        <button class="btn_experience" onclick="toggleExperience('exp_synnex')">
             <div>
                 <h6 class="btn_title">2. Synnex IT Solution</h6>
                 <p>Business Solution (18 Months)</p>
             </div>
         </button>
 
-        <button>
+        <button class="btn_experience" onclick="toggleExperience('exp_it_officer')">
             <div>
-                <h6 class="btn_title">3. Government Of Sri Lanka</h6>
+                <h6 class="btn_title" >3. Government Of Sri Lanka</h6>
                 <p>IT Officer (20 Months)</p>
             </div>
         </button>
 
-        <button>
+        <button class="btn_experience" onclick="toggleExperience('exp_nbs')">
             <div>
                 <h6 class="btn_title">4. Namal Business Solution</h6>
                 <p>Junior Software Engineer (30 Months)</p>
@@ -69,7 +69,7 @@
     <div id="div_main">
 
         <!-- trizent experience -->
-        <div class="exp_card">
+        <div class="exp_card" id="exp_trizent">
             <div class="div_title">
                 <div>
                     <h5 class="h5_title">Trizent Infratech</h5>
@@ -81,7 +81,7 @@
                         Location: <b>Dubai, UAE</b>
                     </p>
                 </div>
-                <div>
+                <div class="div_logo">
                     <img src="assets/images/companies/trizent_logo_2.png" alt="" class="img_company_logo">
                 </div>
             </div>
@@ -126,7 +126,7 @@
         </div>
 
         <!-- Synnex Experience -->
-        <div class="exp_card">
+        <div class="exp_card" id="exp_synnex">
             <div class="div_title">
                 <div>
                     <h5 class="h5_title">Synnex IT Solution PVT(LTD)</h5>
@@ -138,7 +138,7 @@
                         Location: <b>Colombo, Sri Lanka</b>
                     </p>
                 </div>
-                <div>
+                <div class="div_logo">
                     <img src="assets/images/companies/synnex_logo.png" alt="" class="img_company_logo">
                 </div>
             </div>
@@ -208,7 +208,7 @@
         </div>
 
         <!-- goverment it officer -->
-        <div class="exp_card">
+        <div class="exp_card" id="exp_it_officer">
             <div class="div_title">
                 <div>
                     <h5 class="h5_title">Government of Sri Lanka - Registrar Department</h5>
@@ -220,7 +220,7 @@
                         Location: <b>Kurunegala, Sri Lanka</b>
                     </p>
                 </div>
-                <div>
+                <div class="div_logo">
                     <img src="assets/images/companies/gov_logo.png" alt="" class="img_company_logo">
                 </div>
             </div>
@@ -279,7 +279,7 @@
         </div>
 
         <!-- namal business solution -->
-        <div class="exp_card">
+        <div class="exp_card" id="exp_nbs">
             <div class="div_title">
                 <div>
                     <h5 class="h5_title">Namal Business Solution</h5>
@@ -291,7 +291,7 @@
                         Location: <b>Kurunegala, Sri Lanka</b>
                     </p>
                 </div>
-                <div>
+                <div class="div_logo">
                     <img src="assets/images/companies/namal_system_logo.png" alt="" class="img_company_logo">
                 </div>
             </div>
@@ -356,6 +356,9 @@
                 <li>Improved ability to work in a professional development environment</li>
             </ul>
         </div>
+
     </div>
+
+    <script src="js/experience_script.js"></script>
 </body>
 </html>
