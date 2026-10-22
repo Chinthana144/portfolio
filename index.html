@@ -42,18 +42,21 @@
                 <h6>Full-Stack Software Engineer</h6>
             </div>
             
-            <div id="nav_mobile_toggle">
+            <div id="nav_mobile_toggle" onclick="toggleMobileNavbar()">
                 <div class="nav_mobile_toggle_line"></div>
                 <div class="nav_mobile_toggle_line"></div>
                 <div class="nav_mobile_toggle_line"></div>
             </div>
         </div>
-        <div id="nav_mobile_items" onclick="toggleMobileNavbar()">
-            <a href="index.html" class="nav-item-links">Home</a>
-            <a href="projects.html" class="nav-item-links">Projects</a>
-            <a href="experiences.html" class="nav-item-links">Experiences</a>
-            <a href="index.html#sec_skills" class="nav-item-links">Skills</a>
-            <a href="index.html#sec_about" class="nav-item-links">About</a>
+    </div>
+
+    <div id="sidebar">
+        <div id="sidebar_items">
+            <a href="index.html" class="side_item_links">Home</a>
+            <a href="projects.html" class="side_item_links">Projects</a>
+            <a href="experiences.html" class="side_item_links">Experiences</a>
+            <a href="index.html#sec_skills" class="side_item_links">Skills</a>
+            <a href="index.html#sec_contact" class="side_item_links">Contact</a>
         </div>
     </div>
 
@@ -400,6 +403,9 @@
             
         </section>
     </div>
+
+    <script src="js/navbar_script.js"></script>
+    <script src="js/index_script.js"></script>
 
 </body>
 </html>

@@ -95,7 +95,9 @@ body{
     border-radius: 2px;
 }
 
-/* skill section */
+/* =========================================== 
+    skill section 
+==============================================*/
 #sec_skill_top{
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -134,7 +136,9 @@ body{
     font-size: 12px;
 }
 
-/* projects section */
+/* ============================================ 
+    projects section 
+===============================================*/
 .projects_row{
     display: flex;
     flex-direction: row;
@@ -201,7 +205,9 @@ body{
     border-radius: 10px;
 }
 
-/* experience section */
+/* ================================================
+    experience section
+===================================================*/
 #div_experience{
     display:flex;
     flex-direction: row;
@@ -224,7 +230,9 @@ body{
     height: 80px;
 }
 
-/* education */
+/* ==============================================
+    education
+================================================ */
 .education_card{
     margin: 10px 0;
     padding: 10px;
@@ -273,6 +281,49 @@ body{
 /* =================================================================
    tablet responsive design 
 ====================================================================*/
-@media screen and (min-width: 768px){
-    
+@media screen and (max-width: 768px){
+    .section{
+        width: 100%;
+        margin-left: 0;
+    }
+    #hero_sec_title{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .skill_card_row{
+        flex-direction: column;
+    }
+    .skill_card{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5px;
+    }
+    .projects_row{
+        flex-direction: column;
+    }
+    .project_card{
+        width: 98%;
+        margin-left: 1%;
+    }
+    .tech_list{
+        flex-direction: column;
+    }
+
+    #div_experience{
+        flex-direction: column;
+    }
+    .experience_card{
+        width: 100%;
+    }
+    .title_row{
+        flex-direction: column;
+    }
+    .img_company{
+        height: 100px;
+        width: auto;
+    }
+
+    .education_details{
+        flex-direction: column;
+    }
 }

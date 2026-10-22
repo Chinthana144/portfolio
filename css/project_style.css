@@ -183,3 +183,31 @@ body{
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 768px){
+    #div_sidebar{
+        display: none;
+    }
+    #div_content{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-image .mobile_image{
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .thumbnails{
+        width: 100%;
+        margin-left: 0;
+        overflow-y: scroll;
+    }
+    .thumbnails img{
+        width: 60px;
+        height: auto;
+        margin: 0px 5px;
+    }
+
+    
+}

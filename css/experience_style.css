@@ -125,3 +125,16 @@ body{
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 768px){
+    #exp_navbar{
+        display: none;
+    }
+    .exp_card{
+        width: 100%;
+        margin-left: 0;
+    }
+    .div_title{
+        flex-direction: column;
+    }
+}

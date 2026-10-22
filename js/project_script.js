@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     const elements = document.getElementsByClassName('section');
+    const screeWidth = screen.width;
 
-    for(const element of elements){
-        element.style.display = "none";
-        // console.log('running');
-    }
+    if(screeWidth >= 768)
+    {
+        for(const element of elements){
+            element.style.display = "none";
+            // console.log('running');
+        }
 
-    const cloudtik = document.getElementById('sec_cloudtik');
-    cloudtik.style.display = "block";
-    cloudtik.classList.add('active');
-
+        const cloudtik = document.getElementById('sec_cloudtik');
+        cloudtik.style.display = "block";
+        cloudtik.classList.add('active');
+    }//responsive design
 });
 
 function changeImage(element) {
