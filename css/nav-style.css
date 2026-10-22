@@ -9,6 +9,13 @@
     width: 100%;
     z-index: 100;
 }
+.nav_mobile_toggle_line{
+    width: 30px;
+    height: 3px;
+    background-color: var(--main-text);
+    margin: 6px 0;
+}
+
 #nav_contact{
     display: flex;
     flex-direction: row;
@@ -40,4 +47,20 @@
 }
 .nav_icon_link img:hover{
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px){
+    #navbar{
+        display: none;
+    }
+    #nav_mobile_top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 8px;
+        background-color: var(--secondary-background);
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
 }

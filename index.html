@@ -35,6 +35,28 @@
         </div>
     </div>
 
+    <div id="nav_mobile">
+        <div id="nav_mobile_top">
+            <div>
+                <h4>Chinthana Edirisinghe</h4>
+                <h6>Full-Stack Software Engineer</h6>
+            </div>
+            
+            <div id="nav_mobile_toggle">
+                <div class="nav_mobile_toggle_line"></div>
+                <div class="nav_mobile_toggle_line"></div>
+                <div class="nav_mobile_toggle_line"></div>
+            </div>
+        </div>
+        <div id="nav_mobile_items" onclick="toggleMobileNavbar()">
+            <a href="index.html" class="nav-item-links">Home</a>
+            <a href="projects.html" class="nav-item-links">Projects</a>
+            <a href="experiences.html" class="nav-item-links">Experiences</a>
+            <a href="index.html#sec_skills" class="nav-item-links">Skills</a>
+            <a href="index.html#sec_about" class="nav-item-links">About</a>
+        </div>
+    </div>
+
     <div id="div_main">
         <div id="div_top_space"></div>
 
@@ -54,8 +76,15 @@
                         <h4>Flutter</h4>
                         <h4>C# / .Net</h4>
                     </div>
-                    <a href="#" class="hero_link">View my work</a>
-                    <a href="#" class="hero_link">Contact</a>
+                    <!-- <a href="#" class="hero_link">View my work</a> -->
+                    <!-- <a href="#" class="hero_link">Contact</a> -->
+                    <p>
+                        I'm a software engineer passionate about building practical, reliable, and user-friendly applications. 
+                        <br>
+                        From web and mobile development to desktop software and system integrations, 
+                        <br>
+                        I enjoy turning complex challenges into simple, effective solutions using modern technologies.
+                    </p>
                 </div>
                 <div>
                     <img src="assets/images/profiles/profile_1.jpg" alt="profile" id="img_profile">
@@ -182,8 +211,9 @@
             <!-- top row -->
             <div class="projects_row">
                 <div class="card project_card">
-                    <img src="assets/images/cloudtik/dashboard.png" alt="dashboard">
                     <h5>CloudTik</h5>
+                    <img src="assets/images/cloudtik/dashboard.png" alt="dashboard">
+                    
                     <p>ISP management platform for managing customers, subscriptions, packages, and multiple camps with MikroTik integration.</p>
                     <ul class="tech_list">
                         <li>Laravel</li>
@@ -192,11 +222,12 @@
                         <li>Sanctum</li>
                         <li>Mikrotik Api</li>
                     </ul>
-                    <a href="#">View Project</a>
+                    <a href="projects.html">View Project</a>
                 </div>
                 <div class="card project_card">
-                    <img src="assets/images/accesshub/dashboard.png" alt="dashboard">
                     <h5>AccessHub</h5>
+                    <img src="assets/images/accesshub/dashboard.png" alt="dashboard">
+                    
                     <p>Internet access management system that connects Google Sheets, Laravel, and MikroTik to manage user access across multiple camps.</p>
                     <ul class="tech_list">
                         <li>Laravel</li>
@@ -205,15 +236,16 @@
                         <li>Mikrotik API</li>
                         <li>MySQL</li>
                     </ul>
-                    <a href="#">View Project</a>
+                    <a href="projects.html">View Project</a>
                 </div>
             </div>
 
             <!-- bottom row -->
             <div class="projects_row">
                 <div class="card project_card">
-                    <img src="assets/images/cloudtik_sale/dashboard.jpg" alt="dashboard" class="img_project_mobile">
                     <h5>CloudTik Sales</h5>
+                    <img src="assets/images/cloudtik_sale/dashboard.jpg" alt="dashboard" class="img_project_mobile">
+                    
                     <p>Mobile companion for CloudTik that allows salespersons to manage customers and track their daily sales through a secure Laravel API.</p>
                     <ul class="tech_list">
                         <li>Flutter</li>
@@ -221,11 +253,12 @@
                         <li>Provider</li>
                         <li>Laravel Sanctum</li>
                     </ul>
-                    <a href="#">View Project</a>
+                    <a href="projects.html">View Project</a>
                 </div>
                 <div class="card project_card">
+                    <h5>MyAccounts - Expense Tracker</h5>
                     <img src="assets/images/expense_tracker/dashboard.jpg" alt="dashboard" class="img_project_mobile">
-                    <h5>MyAccount</h5>
+                    
                     <p>Offline-first personal expense tracker for managing multiple accounts, currencies, income, expenses, and financial insights.</p>
                     <ul class="tech_list">
                         <li>Flutter</li>
@@ -233,7 +266,7 @@
                         <li>SQLite</li>
                         <li>Provider</li>
                     </ul>
-                    <a href="#">View Project</a>
+                    <a href="projects.html">View Project</a>
                 </div>
             </div>
         </section>

@@ -45,3 +45,17 @@ function toggleNavBar(){
         navItemList.style.display = "none";
     }
 }
+
+//toggle navbar
+function toggleMobileNavbar()
+{
+    const navItems = document.getElementById('nav_mobile_items');
+    
+    if(navItems.style.display === "none" || navItems.style.display == "")
+    {
+        navItems.style.display == "block";
+    }
+    else{
+        navItems.style.display == "none";
+    }
+}//mobile toggler
