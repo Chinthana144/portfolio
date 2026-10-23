@@ -3,32 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinthana's Experiences</title>
+    <title>Chinthana Edirisinghe</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/experience_style.css">
 </head>
 <body>
-    <!-- navigation bar -->
-    <div id="nav_bar">
-        <button id="btn_menu" onclick="toggleNavBar()">Menu</button>
-
-        <div id="nav_title">
-            <h4 style="margin: 0; font-size: 18px;">Experiences</h4>
-            <p style="margin: 0; font-size: 12px;">chinthana144@gmail.com</p>
+    <div id="navbar">
+        <div>
+            <h4>Chinthana Edirisinghe</h4>
+            <h6>Full-Stack Software Engineer</h6>
         </div>
-        <div id="nav_items">
-            <a href="index.html" class="nav_link">Home</a>
-            <a href="index.html#sec_about_me" class="nav_link">About</a>
-            <a href="index.html#sec_skills" class="nav_link">Skills</a>
-            <a href="projects.html" class="nav_link">Projects</a>
-            <a href="experiences.html" class="nav_link">Experience</a>
-            <a href="index.html#sec_education" class="nav_link">Education</a>
-            <a href="index.html#sec_contact" class="nav_link">Contact</a>
+        <div id="nav-items">
+            <a href="index.html" class="nav-item-links">Home</a>
+            <a href="projects.html" class="nav-item-links">Projects</a>
+            <a href="experiences.html" class="nav-item-links">Experiences</a>
+            <a href="index.html#sec_skills" class="nav-item-links">Skills</a>
+            <a href="index.html#sec_about" class="nav-item-links">About</a>
         </div>
-
-        <div id="nav_ref">
+        <div id="nav_contact">
             <a href="mailto:chinthana144@gmail.com" class="nav_icon_link">
-                <img src="assets/icons/email_icon.png" alt="linkedin icon">
+                <img src="assets/icons/email_icon.png" alt="email icon">
             </a>
             <a href="https://www.linkedin.com/in/chinthana-edirisinghe-42399321a" class="nav_icon_link">
                 <img src="assets/icons/linkedin_logo.png" alt="linkedin icon">
@@ -39,36 +34,89 @@
         </div>
     </div>
 
-    <section class="section">
-         <h4>Experiences</h4>
-
-         <div class="div_project_links" style="margin-top: 10px;">
-            <a href="#trizent_infratech" class="experience_list_item">Trizent Infratech - Full Stack Developer</a>
-            <a href="#synnex_it_solution" class="experience_list_item">Synnex IT Solution - Senior Software Engineer</a>
-            <a href="#registrar_general" class="experience_list_item">Registrar General Office - IT Officer</a>
-            <a href="#namal_business_solution" class="experience_list_item">Namal Business Solution - Junior Software Developer</a>
-        </div>
-    </section>
-
-    <!-- trizent Section -->
-    <section class="section" id="trizent_infratech">
-        <div class="div_experiences">
-            <h4>Trizent Infratech - Network Solutions Company</h4>
-
-            <img src="assets/images/companies/tirzent_logo.png" alt="" class="img_company_logo" style="background-color: rgb(23, 11, 103);">
+    <div id="nav_mobile">
+        <div id="nav_mobile_top">
+            <div>
+                <h4>Chinthana Edirisinghe</h4>
+                <h6>Full-Stack Software Engineer</h6>
+            </div>
             
-            <p>
-                Role: <b>Full Stack Developer</b> <br>
-                Duration: <b>from March 2025 to present</b><br>
-                Location: <b>Dubai, UAE</b>
-            </p>
+            <div id="nav_mobile_toggle" onclick="toggleMobileNavbar()">
+                <div class="nav_mobile_toggle_line"></div>
+                <div class="nav_mobile_toggle_line"></div>
+                <div class="nav_mobile_toggle_line"></div>
+            </div>
+        </div>
+    </div>
 
-            <h5>Overview</h5>
+    <div id="div_top_space"></div>
+
+    <div id="sidebar">
+        <div id="sidebar_items">
+            <a href="index.html" class="side_item_links">Home</a>
+            <a href="projects.html" class="side_item_links">Projects</a>
+            <a href="experiences.html" class="side_item_links">Experiences</a>
+            <a href="index.html#sec_skills" class="side_item_links">Skills</a>
+            <a href="index.html#sec_contact" class="side_item_links">Contact</a>
+        </div>
+    </div>
+
+    <div id="exp_navbar">
+        <button class="btn_experience" onclick="toggleExperience('exp_trizent')">
+            <div>
+                <h6 class="btn_title">1. Trizent Infratech</h6>
+                <p>Network Solution (Currently Working)</p>
+            </div>
+        </button>
+
+        <button class="btn_experience" onclick="toggleExperience('exp_synnex')">
+            <div>
+                <h6 class="btn_title">2. Synnex IT Solution</h6>
+                <p>Business Solution (18 Months)</p>
+            </div>
+        </button>
+
+        <button class="btn_experience" onclick="toggleExperience('exp_it_officer')">
+            <div>
+                <h6 class="btn_title" >3. Government Of Sri Lanka</h6>
+                <p>IT Officer (20 Months)</p>
+            </div>
+        </button>
+
+        <button class="btn_experience" onclick="toggleExperience('exp_nbs')">
+            <div>
+                <h6 class="btn_title">4. Namal Business Solution</h6>
+                <p>Junior Software Engineer (30 Months)</p>
+            </div>
+        </button>
+    </div>
+
+    <div id="div_main">
+
+        <!-- trizent experience -->
+        <div class="exp_card" id="exp_trizent">
+            <div class="div_title">
+                <div>
+                    <h5 class="h5_title">Trizent Infratech</h5>
+                    <p class="p_title_description">
+                        Role: <b>Full-Stack Developer</b>
+                        <br>
+                        Duration: <b>From March 2025 (Currently Working)</b>
+                        <br>
+                        Location: <b>Dubai, UAE</b>
+                    </p>
+                </div>
+                <div class="div_logo">
+                    <img src="assets/images/companies/trizent_logo_2.png" alt="" class="img_company_logo">
+                </div>
+            </div>
+
+            <h6>Overview</h6>
             <p>
                 Trizent Infratech provides network infrastructure, CCTV installation, and internet services for labor camps. The company relied on manual spreadsheet-based workflows for managing customer subscriptions and sales operations.
             </p>
-
-            <h5>Responsibilities & Contributions</h5>
+            
+            <h6>Responsibilities & Contributions</h6>
             <ul>
                 <li>Designed and developed the CloudTik ISP Management System to replace manual spreadsheet-based operations</li>
                 <li>Built a full-stack web application using Laravel, Blade, and MySQL</li>
@@ -78,7 +126,7 @@
                 <li>Implemented role-based access control for multiple salespersons</li>
             </ul>
 
-            <h5>Challenges in Existing System</h5>
+            <h6>Challenges in Existing System</h6>
             <ul>
                 <li>Sales and customer data managed manually using spreadsheets</li>
                 <li>No visibility into customer login time or subscription expiry</li>
@@ -89,7 +137,7 @@
                 <li>Difficult for salespersons to operate efficiently using mobile devices</li>
             </ul>
 
-            <h5>Impact & Improvements</h5>
+            <h6>Impact & Improvements</h6>
             <ul>
                 <li>Replaced manual workflows with a centralized ISP management system</li>
                 <li>Enabled real-time tracking of customer login and subscription expiry</li>
@@ -99,28 +147,33 @@
                 <li>Reduced operational errors and improved overall system reliability</li>
                 <li>Streamlined sales operations across multiple camps</li>
             </ul>
+
         </div>
-    </section>
 
-    <section class="section" id="synnex_it_solution">
-        <div class="div_experience">
-            
-            <h4>Synnex IT Solution - POS Software & Hardware Provider</h4>
+        <!-- Synnex Experience -->
+        <div class="exp_card" id="exp_synnex">
+            <div class="div_title">
+                <div>
+                    <h5 class="h5_title">Synnex IT Solution PVT(LTD)</h5>
+                    <p class="p_title_description">
+                        Role: <b>Senior Software Engineer</b>
+                        <br>
+                        Duration: <b>18 Months</b>
+                        <br>
+                        Location: <b>Colombo, Sri Lanka</b>
+                    </p>
+                </div>
+                <div class="div_logo">
+                    <img src="assets/images/companies/synnex_logo.png" alt="" class="img_company_logo">
+                </div>
+            </div>
 
-            <img src="assets/images/companies/synnex_logo.png" alt="" class="img_company_logo" style="width: 200px; background-color: rgb(225, 241, 244);">
-            
-            <p>
-                Role: <b>Senior Software Engineer</b> <br>
-                Duration: <b>June 2023 - December 2024</b><br>
-                Location: <b>Colombo, Sri Lanka</b>
-            </p>
-
-            <h5>Overview</h5>
+            <h6>Overview</h6>
             <p>
                 Synnex IT Solution specializes in POS software and hardware solutions for retail businesses. During my time there, I developed both offline and cloud-based POS systems for over 50 clients, focusing on scalability, usability, and integration with hardware devices.
             </p>
 
-            <h5>Responsibilities & Contributions</h5>
+            <h6>Responsibilities & Contributions</h6>
             <ul>
                 <li>Developed online and offline POS systems tailored for multiple business clients</li>
                 <li>Led development of a Cloud POS system with a team of two developers</li>
@@ -137,7 +190,6 @@
                 <li>Built scalable solutions to support multiple business workflows and requirements</li>
             </ul>
 
-            <h5>Key Technical Achievements</h5>
             <h6>Dynamic Excel Import System</h6>
             <ul>
                 <li>Developed a flexible Excel upload feature</li>
@@ -179,26 +231,31 @@
                 <li>Led and collaborated within a small development team</li>
             </ul>
         </div>
-    </section>
 
-    <section class="section" id="registrar_general">
-        <div class="div_experience">
-            
-            <h4>Registrar General's Department - Anuradhapura</h4>
-            <img src="assets/images/companies/gov_logo.png" alt="" class="img_company_logo" style="background-color: rgb(225, 241, 244);">
+        <!-- goverment it officer -->
+        <div class="exp_card" id="exp_it_officer">
+            <div class="div_title">
+                <div>
+                    <h5 class="h5_title">Government of Sri Lanka - Registrar Department</h5>
+                    <p class="p_title_description">
+                        Role: <b>IT Officer</b>
+                        <br>
+                        Duration: <b>20 Months</b>
+                        <br>
+                        Location: <b>Kurunegala, Sri Lanka</b>
+                    </p>
+                </div>
+                <div class="div_logo">
+                    <img src="assets/images/companies/gov_logo.png" alt="" class="img_company_logo">
+                </div>
+            </div>
 
-            <p>
-                Role: <b>IT Officer</b> <br>
-                Duration: <b>February 2021 - June 2023</b><br>
-                Location: <b>Anuradhapura, Sri Lanka</b>
-            </p>
-
-            <h5>Overview</h5>
+            <h6>Overview</h6>
             <p>
                 Worked as an IT Officer supporting digital transformation initiatives across district registrar offices. Developed systems to improve record management, accuracy, and accessibility of vital certificate data.
             </p>
 
-            <h5>Key Contributions</h5>
+            <h6>Key Contributions</h6>
             <ul>
                 <li>
                     Developed a web-based system to centralize records of:
@@ -219,7 +276,7 @@
                 <li>Collaborated with district staff to gather requirements and ensure smooth adoption</li>
             </ul>
 
-            <h5>Additional Achievement</h5>
+            <h6>Additional Achievement</h6>
             <ul>
                 <li>
                     Developed a C# desktop application to:
@@ -231,43 +288,47 @@
                 <li>Improved data accuracy and reduced manual workload</li>
             </ul>
 
-            <h5>Impact</h5>
+            <h6>Impact</h6>
             <ul>
                 <li>Digitized and centralized critical government records</li>
                 <li>Improved operational efficiency across multiple offices</li>
                 <li>Enabled faster and more reliable data retrieval</li>
             </ul>
 
-            <h5>Key Takeaways</h5>
+            <h6>Key Takeaways</h6>
             <ul>
                 <li>Experience working in a government environment</li>
                 <li>Strong skills in requirement gathering and system implementation</li>
                 <li>Built solutions with real-world administrative impact</li>
             </ul>
         </div>
-    </section>
 
-    <!-- Namal business solutions -->
-    <section class="section" id="namal_business_solution">
-        <div class="div_experience">
-           
-            <h4>Namal Business Solution</h4>
-            <img src="assets/images/companies/namal_system_logo.png" alt="" class="img_company_logo" style="background-color: rgb(225, 241, 244);">
+        <!-- namal business solution -->
+        <div class="exp_card" id="exp_nbs">
+            <div class="div_title">
+                <div>
+                    <h5 class="h5_title">Namal Business Solution</h5>
+                    <p class="p_title_description">
+                        Role: <b>Junior Software Engineer</b>
+                        <br>
+                        Duration: <b>30 Months</b>
+                        <br>
+                        Location: <b>Kurunegala, Sri Lanka</b>
+                    </p>
+                </div>
+                <div class="div_logo">
+                    <img src="assets/images/companies/namal_system_logo.png" alt="" class="img_company_logo">
+                </div>
+            </div>
 
-            <p>
-                Role: <b>Junior Software Developer</b> <br>
-                Duration: <b>January 2019 - February 2021</b><br>
-                Location: <b>Kurunegala, Sri Lanka</b>
-            </p>
-
-            <h5>Overview</h5>
+            <h6>Overview</h6>
             <p>
                 Started as a Software Engineering Intern and progressed to a Junior Software Developer, contributing to POS and banking software solutions for cooperative (COOP) institutions.
                 <br>
                 Gained hands-on experience in real-world system development, deployment, and client-side implementation, working closely with senior developers and business systems.
             </p>
 
-            <h5>Key Responsibilities & Contributions</h5>
+            <h6>Key Responsibilities & Contributions</h6>
             <ul>
                 <li>
                     <b>POS System Development & Support</b><br>
@@ -320,8 +381,9 @@
                 <li>Improved ability to work in a professional development environment</li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/navbar_script.js"></script>
+    <script src="js/experience_script.js"></script>
 </body>
 </html>

@@ -1,0 +1,140 @@
+:root{
+    --main-background : #080D18;
+    --secondary-background : #0D1424;
+    --card-color: #111B2E;
+    --border-color: #1E2D46;
+    --main-text: #F1F5F9;
+    --secondary-text: #94A3B8;
+    --primary-accent: #3B82F6;
+    --bright-accent: #38BDF8; 
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-background);
+    color: var(--main-text);
+    font-family: sans-serif;
+}
+#div_top_space{
+    height: 70px;
+}
+
+#exp_navbar{
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn_experience{
+    width: 20%;
+    padding: 5px;
+    text-align: left;
+    background-color: var(--card-color);
+    color: var(--secondary-text);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btn_experience:hover{
+    border-color: var(--bright-accent);
+}
+
+.btn_title{
+    font-size: 18px;
+}
+
+/* main */
+#div_main{
+    margin-top: 70px;
+}
+
+.exp_card{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--card-color);
+    border-radius: 10px;
+}
+.exp_card h6{
+    font-size: 16px;
+    color: var(--main-text);
+    margin: 10px 0;
+}
+.exp_card p{
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+.exp_card ul{
+    list-style-type: none;
+}
+.exp_card li{
+    font-size: 12px;
+    color: var(--secondary-text);
+    background-color: var(--border-color);
+    margin: 5px 0;
+    padding: 5px 10px;
+    /* box-shadow: 0 0 20px var(--border-color); */
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.div_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div_logo{
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--border-color);    
+}
+.h5_title{
+    font-size: 22px;
+    font-family: sans-serif;
+    color: var(--primary-accent);
+}
+.p_title_description{
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+.img_company_logo{
+    height: 100px;
+    width: auto;
+}
+
+.active{
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px){
+    #exp_navbar{
+        display: none;
+    }
+    .exp_card{
+        width: 100%;
+        margin-left: 0;
+    }
+    .div_title{
+        flex-direction: column;
+    }
+}
